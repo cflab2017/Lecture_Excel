@@ -1,0 +1,31 @@
+{
+ "run": "2026-11-04T12:27:55",
+ "font": [
+  "맑은 고딕",
+  11.0
+ ],
+ "h0": 16.5,
+ "typed": {
+  "len": 28,
+  "code": 10,
+  "wrap": true,
+  "h": 49.5
+ },
+ "formula": {
+  "value": "46336\nRoom 3A",
+  "wrap": false,
+  "h": 16.5,
+  "h_after_wrap": 33.0
+ },
+ "manual": {
+  "h_set": 16.5,
+  "h_autofit": 33.0
+ },
+ "replace": {
+  "value": "Quote\nBusiness cards\n3 samples\nDrinks",
+  "wrap": true,
+  "h": 16.5,
+  "h_autofit": 66.0
+ },
+ "substitute": "Laptop, Projector, 10 handouts"
+}

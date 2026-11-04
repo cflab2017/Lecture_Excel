@@ -1,0 +1,66 @@
+{
+ "run": "2026-11-04T12:18:49",
+ "build": 20527.0,
+ "labels": {
+  "WrapText": "자동 줄 바꿈",
+  "AlignmentGroup": null,
+  "GroupAlignmentExcel": "맞춤",
+  "FindDialogExcel": "찾기...",
+  "ReplaceDialog": "바꾸기...",
+  "FormatCellsDialog": "셀 서식...",
+  "RowHeight": "행 높이...",
+  "RowAutofitHeight": null
+ },
+ "row_h_default": 16.5,
+ "lf": {
+  "len": 19,
+  "code_at_break": 10,
+  "wrap_after_value": true,
+  "row_h_after_value": 49.5,
+  "row_h_after_wrap": 49.5
+ },
+ "manual": {
+  "row_h_set": 16.5,
+  "row_h_after_wrap": 16.5,
+  "row_h_after_autofit": 33.0
+ },
+ "wrap_long": {
+  "12": 99.0,
+  "24": 49.5,
+  "48": 33.0
+ },
+ "formula": {
+  "text": "11월 10일\n3층 대회의실",
+  "wrap": false
+ },
+ "textjoin": "노트북\n빔프로젝터",
+ "substitute": "노트북, 빔프로젝터, 회의 자료 10부",
+ "replace": {
+  "ok": true,
+  "K2": "견적서 / 명함 / 샘플 3종 / 음료",
+  "K3": "화이트보드 펜 / 포스트잇"
+ },
+ "clip_one_cell": "\"노트북\n빔프로젝터\n회의 자료 10부\"\r\n",
+ "clip_two_cells": "분기 실적 보고\t\"노트북\n빔프로젝터\n회의 자료 10부\"\r\n",
+ "csv": {
+  "bytes": "회의실,준비물\r\n3층 대회의실,\"노트북\n빔프로젝터\"\r\n",
+  "bom": true
+ },
+ "files": {
+  "실습.xlsx": [
+   16.5,
+   16.5,
+   16.5,
+   16.5,
+   16.5
+  ],
+  "정답.xlsx": [
+   16.5,
+   49.5,
+   33.0,
+   66.0,
+   33.0
+  ]
+ },
+ "clip_restored": true
+}

@@ -2,7 +2,7 @@
 
 사무에서 바로 쓰는 **엑셀** 를 기초 → 중급 → 고급 순서로 배우는 한국어 강의입니다. 2026년 11월부터 하루 한 편씩 연재합니다.
 
-- 강의 페이지: https://www.coding-now.com/blog/excel (1강 발행과 함께 열립니다)
+- 강의 페이지: https://www.coding-now.com/blog/excel · English: https://www.coding-now.com/en/blog/excel
 - 확인 환경: 엑셀(Microsoft 365) — 강의에 적은 결과는 모두 이 환경에서 직접 해 보고 옮긴 것입니다.
 
 ## 폴더
@@ -26,6 +26,7 @@
 
 | 단계 | # | 강의 | 핵심 |
 |---|---|---|---|
+| 기초 | 1 | [엑셀 줄바꿈 — 셀 안에서 줄 바꾸기](01_기초/01_엑셀_줄바꿈/) · [강의](https://www.coding-now.com/blog/excel/excel-basic-01-line-break) | Alt+Enter · 자동 줄 바꿈 · Ctrl+J 로 없애기 |
 
 ---
 만든 곳: [코딩나우 CODINGNOW](https://www.coding-now.com)
