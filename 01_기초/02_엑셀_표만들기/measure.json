@@ -1,0 +1,224 @@
+{
+ "run": "2026-11-05T09:36:56",
+ "build": 20527.0,
+ "labels": {
+  "BordersAll": "모든 테두리",
+  "BordersGallery": "테두리",
+  "FormatAsTableGallery": "표 서식",
+  "TableInsert": null,
+  "TableInsertExcel": "표",
+  "TableStylesGallery": null,
+  "TableTotalsRowShow": null,
+  "TableTotalRowShow": null,
+  "TableConvertToRange": "범위로 변환",
+  "TableToolsConvertToRange": null,
+  "ConvertTableToRange": null,
+  "TableBandedRows": null,
+  "TableHeaderRowShow": null,
+  "TableFilterButton": null,
+  "SortAscendingExcel": "오름차순 정렬",
+  "SortDescendingExcel": "내림차순 정렬",
+  "SortDialog": "정렬...",
+  "Filter": "필터",
+  "AutoFilterClassic": "자동 필터",
+  "FormatAsTable": null,
+  "TableResize": "표 크기 조정...",
+  "TableName": "테이블 이름:",
+  "TableToolsDesign": null
+ },
+ "autoexpand_setting": true,
+ "autofill_formulas_setting": true,
+ "border": {
+  "sum_before": 610000.0,
+  "sum_after_new_row": 610000.0,
+  "sum_formula_after": "=SUM(F2:F9)",
+  "new_row_border_bottom": -4142,
+  "new_row_border_left": -4142,
+  "row9_border_bottom": 1,
+  "autofilter": false
+ },
+ "sort_trap": {
+  "before": [
+   [
+    "한빛상사",
+    "장미 꽃다발"
+   ],
+   [
+    "서연",
+    "축하 화환"
+   ],
+   [
+    "도윤",
+    "튤립 화분"
+   ],
+   [
+    "한빛상사",
+    "난 화분"
+   ],
+   [
+    "지아",
+    "장미 꽃다발"
+   ],
+   [
+    "새봄유치원",
+    "튤립 화분"
+   ],
+   [
+    "민준",
+    "프리저브드 꽃"
+   ],
+   [
+    "서연",
+    "장미 꽃다발"
+   ]
+  ],
+  "after": [
+   [
+    "한빛상사",
+    "난 화분"
+   ],
+   [
+    "서연",
+    "장미 꽃다발"
+   ],
+   [
+    "도윤",
+    "장미 꽃다발"
+   ],
+   [
+    "한빛상사",
+    "장미 꽃다발"
+   ],
+   [
+    "지아",
+    "축하 화환"
+   ],
+   [
+    "새봄유치원",
+    "튤립 화분"
+   ],
+   [
+    "민준",
+    "튤립 화분"
+   ],
+   [
+    "서연",
+    "프리저브드 꽃"
+   ]
+  ],
+  "rows_mismatched": 4,
+  "moved_rows": 7
+ },
+ "blank_row_current_region": "A1:F5",
+ "table": {
+  "name": "표1",
+  "style": "TableStyleMedium2",
+  "style_local": "표 스타일 보통 2",
+  "range": "A1:F9",
+  "show_autofilter": true,
+  "banded_rows": true,
+  "header_row": true,
+  "header_fill": 8544277.0,
+  "row2_fill": 16115392.0,
+  "row3_fill": 16777215.0,
+  "calc_col_F3": "=[@수량]*[@단가]",
+  "calc_col_F9_value": 105000.0,
+  "calc_col_formula_local": "=[@수량]*[@단가]",
+  "range_after_new_row_com": "A1:F10",
+  "F10_after_new_row_com": "=[@수량]*[@단가]",
+  "totals_row": "A11:F11",
+  "totals_label": "요약",
+  "totals_formula": "=SUBTOTAL(109,[금액])",
+  "totals_value": 740000.0,
+  "sum_structured": 740000.0
+ },
+ "filter": {
+  "visible_rows": 3,
+  "totals_value": 210000.0,
+  "sum_outside": 740000.0,
+  "subtotal_vs_sum": [
+   210000.0,
+   740000.0
+  ]
+ },
+ "table_sort": {
+  "rows": [
+   [
+    "한빛상사",
+    "난 화분",
+    65000.0
+   ],
+   [
+    "하늘약국",
+    "난 화분",
+    130000.0
+   ],
+   [
+    "한빛상사",
+    "장미 꽃다발",
+    70000.0
+   ],
+   [
+    "지아",
+    "장미 꽃다발",
+    35000.0
+   ],
+   [
+    "서연",
+    "장미 꽃다발",
+    105000.0
+   ],
+   [
+    "서연",
+    "축하 화환",
+    89000.0
+   ],
+   [
+    "도윤",
+    "튤립 화분",
+    54000.0
+   ],
+   [
+    "새봄유치원",
+    "튤립 화분",
+    108000.0
+   ],
+   [
+    "민준",
+    "프리저브드 꽃",
+    84000.0
+   ]
+  ],
+  "all_rows_intact": true
+ },
+ "header_names": [
+  "상품",
+  "열1",
+  "금액",
+  "금액2"
+ ],
+ "no_header": {
+  "range": "F2:G4",
+  "names": [
+   "열1",
+   "열2"
+  ]
+ },
+ "merged": {
+  "ok": true,
+  "merged_after": false
+ },
+ "unlist": {
+  "tables_left": 0,
+  "F2": "=범위로변환!$D2*범위로변환!$E2",
+  "total_row": "=SUBTOTAL(109,범위로변환!$F$2:$F$9)",
+  "fill_kept": true,
+  "autofilter": false
+ },
+ "answer": {
+  "name": "주문표",
+  "range": "A1:F10",
+  "total": 610000.0,
+  "total_formula": "=SUBTOTAL(109,[금액])"
+ }
+}
