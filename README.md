@@ -27,6 +27,7 @@
 | 단계 | # | 강의 | 핵심 |
 |---|---|---|---|
 | 기초 | 1 | [엑셀 줄바꿈 — 셀 안에서 줄 바꾸기](01_기초/01_엑셀_줄바꿈/) · [강의](https://www.coding-now.com/blog/excel/excel-basic-01-line-break) | Alt+Enter · 자동 줄 바꿈 · Ctrl+J 로 없애기 |
+| 기초 | 2 | [엑셀 표 만들기 — 테두리 표와 표 서식(Ctrl+T)](01_기초/02_엑셀_표만들기/) · [강의](https://www.coding-now.com/blog/excel/excel-basic-02-table) | 새 줄·계산 열·요약 행(SUBTOTAL 109)·한 열 정렬 함정 |
 
 ---
 만든 곳: [코딩나우 CODINGNOW](https://www.coding-now.com)

@@ -1,0 +1,81 @@
+{
+ "run": "2026-11-05T09:39:53",
+ "border": {
+  "sum_before": 610.0,
+  "sum_after_new_row": 610.0,
+  "new_row_border_bottom": -4142
+ },
+ "sort_trap": {
+  "after_items": [
+   "Orchid pot",
+   "Preserved flowers",
+   "Rose bouquet",
+   "Rose bouquet",
+   "Rose bouquet",
+   "Tulip pot",
+   "Tulip pot",
+   "Wreath"
+  ],
+  "moved_rows": 6
+ },
+ "table": {
+  "range": "A1:F11",
+  "F10": "=[@Qty]*[@Price]",
+  "total": 740.0,
+  "total_formula": "=SUBTOTAL(109,[Amount])"
+ },
+ "filter": {
+  "total": 210.0,
+  "visible": 3
+ },
+ "table_sort": [
+  [
+   "Brightline Co.",
+   "Orchid pot",
+   65.0
+  ],
+  [
+   "Oak Pharmacy",
+   "Orchid pot",
+   130.0
+  ],
+  [
+   "Leo",
+   "Preserved flowers",
+   84.0
+  ],
+  [
+   "Brightline Co.",
+   "Rose bouquet",
+   70.0
+  ],
+  [
+   "Mia",
+   "Rose bouquet",
+   35.0
+  ],
+  [
+   "Sophie",
+   "Rose bouquet",
+   105.0
+  ],
+  [
+   "Daniel",
+   "Tulip pot",
+   54.0
+  ],
+  [
+   "Sunny Kids",
+   "Tulip pot",
+   108.0
+  ],
+  [
+   "Sophie",
+   "Wreath",
+   89.0
+  ]
+ ],
+ "answer": {
+  "total": 610.0
+ }
+}
