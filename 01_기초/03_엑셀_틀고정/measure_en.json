@@ -1,0 +1,677 @@
+{
+ "run": "2026-11-05T14:58:35",
+ "lang": "en",
+ "build": 20527.0,
+ "labels": {
+  "ViewFreezePanesGallery": "틀 고정",
+  "FreezePanes": "틀 고정",
+  "FreezeTopRow": "첫 행 고정",
+  "FreezeFirstColumn": "첫 열 고정",
+  "ViewPageLayoutView": "페이지 레이아웃",
+  "ViewNormalViewExcel": "기본",
+  "PrintTitles": "인쇄 제목"
+ },
+ "rows": 60,
+ "last_row": 61,
+ "top_row": {
+  "cmd": "FreezeTopRow",
+  "select": "E10",
+  "pre_scroll": null,
+  "after": {
+   "freeze": true,
+   "split_row": 1.0,
+   "split_col": 0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 1.0,
+     "visible": "A1:S1"
+    },
+    {
+     "scroll_row": 2.0,
+     "scroll_col": 1.0,
+     "visible": "A2:S18"
+    }
+   ]
+  },
+  "scrolled_to_row40_colI": {
+   "freeze": true,
+   "split_row": 1.0,
+   "split_col": 0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 9.0,
+     "visible": "I1:Z1"
+    },
+    {
+     "scroll_row": 40.0,
+     "scroll_col": 9.0,
+     "visible": "I40:Z56"
+    }
+   ]
+  },
+  "scroll_back_to_1": {
+   "freeze": true,
+   "split_row": 1.0,
+   "split_col": 0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 1.0,
+     "visible": "A1:S1"
+    },
+    {
+     "scroll_row": 2.0,
+     "scroll_col": 1.0,
+     "visible": "A2:S18"
+    }
+   ]
+  }
+ },
+ "first_col": {
+  "cmd": "FreezeFirstColumn",
+  "select": "E10",
+  "pre_scroll": null,
+  "after": {
+   "freeze": true,
+   "split_row": 0,
+   "split_col": 1.0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 1.0,
+     "visible": "A1:A18"
+    },
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 2.0,
+     "visible": "B1:S18"
+    }
+   ]
+  },
+  "scrolled_to_row40_colI": {
+   "freeze": true,
+   "split_row": 0,
+   "split_col": 1.0,
+   "panes": [
+    {
+     "scroll_row": 40.0,
+     "scroll_col": 1.0,
+     "visible": "A40:A57"
+    },
+    {
+     "scroll_row": 40.0,
+     "scroll_col": 9.0,
+     "visible": "I40:Y57"
+    }
+   ]
+  },
+  "scroll_back_to_1": {
+   "freeze": true,
+   "split_row": 0,
+   "split_col": 1.0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 1.0,
+     "visible": "A1:A18"
+    },
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 2.0,
+     "visible": "B1:S18"
+    }
+   ]
+  }
+ },
+ "c2": {
+  "cmd": "FreezePanes",
+  "select": "C2",
+  "pre_scroll": null,
+  "after": {
+   "freeze": true,
+   "split_row": 1.0,
+   "split_col": 2.0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 1.0,
+     "visible": "A1:B1"
+    },
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 3.0,
+     "visible": "C1:S1"
+    },
+    {
+     "scroll_row": 2.0,
+     "scroll_col": 1.0,
+     "visible": "A2:B18"
+    },
+    {
+     "scroll_row": 2.0,
+     "scroll_col": 3.0,
+     "visible": "C2:S18"
+    }
+   ]
+  },
+  "scrolled_to_row40_colI": {
+   "freeze": true,
+   "split_row": 1.0,
+   "split_col": 2.0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 1.0,
+     "visible": "A1:B1"
+    },
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 9.0,
+     "visible": "I1:W1"
+    },
+    {
+     "scroll_row": 40.0,
+     "scroll_col": 1.0,
+     "visible": "A40:B56"
+    },
+    {
+     "scroll_row": 40.0,
+     "scroll_col": 9.0,
+     "visible": "I40:W56"
+    }
+   ]
+  },
+  "scroll_back_to_1": {
+   "freeze": true,
+   "split_row": 1.0,
+   "split_col": 2.0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 1.0,
+     "visible": "A1:B1"
+    },
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 3.0,
+     "visible": "C1:S1"
+    },
+    {
+     "scroll_row": 2.0,
+     "scroll_col": 1.0,
+     "visible": "A2:B18"
+    },
+    {
+     "scroll_row": 2.0,
+     "scroll_col": 3.0,
+     "visible": "C2:S18"
+    }
+   ]
+  }
+ },
+ "a3": {
+  "cmd": "FreezePanes",
+  "select": "A3",
+  "pre_scroll": null,
+  "after": {
+   "freeze": true,
+   "split_row": 2.0,
+   "split_col": 0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 1.0,
+     "visible": "A1:S2"
+    },
+    {
+     "scroll_row": 3.0,
+     "scroll_col": 1.0,
+     "visible": "A3:S18"
+    }
+   ]
+  },
+  "scrolled_to_row40_colI": {
+   "freeze": true,
+   "split_row": 2.0,
+   "split_col": 0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 9.0,
+     "visible": "I1:Z2"
+    },
+    {
+     "scroll_row": 40.0,
+     "scroll_col": 9.0,
+     "visible": "I40:Z55"
+    }
+   ]
+  },
+  "scroll_back_to_1": {
+   "freeze": true,
+   "split_row": 2.0,
+   "split_col": 0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 1.0,
+     "visible": "A1:S2"
+    },
+    {
+     "scroll_row": 3.0,
+     "scroll_col": 1.0,
+     "visible": "A3:S18"
+    }
+   ]
+  }
+ },
+ "c1": {
+  "cmd": "FreezePanes",
+  "select": "C1",
+  "pre_scroll": null,
+  "after": {
+   "freeze": true,
+   "split_row": 0,
+   "split_col": 2.0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 1.0,
+     "visible": "A1:B18"
+    },
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 3.0,
+     "visible": "C1:S18"
+    }
+   ]
+  },
+  "scrolled_to_row40_colI": {
+   "freeze": true,
+   "split_row": 0,
+   "split_col": 2.0,
+   "panes": [
+    {
+     "scroll_row": 40.0,
+     "scroll_col": 1.0,
+     "visible": "A40:B57"
+    },
+    {
+     "scroll_row": 40.0,
+     "scroll_col": 9.0,
+     "visible": "I40:W57"
+    }
+   ]
+  },
+  "scroll_back_to_1": {
+   "freeze": true,
+   "split_row": 0,
+   "split_col": 2.0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 1.0,
+     "visible": "A1:B18"
+    },
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 3.0,
+     "visible": "C1:S18"
+    }
+   ]
+  }
+ },
+ "b2": {
+  "cmd": "FreezePanes",
+  "select": "B2",
+  "pre_scroll": null,
+  "after": {
+   "freeze": true,
+   "split_row": 1.0,
+   "split_col": 1.0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 1.0,
+     "visible": "A1"
+    },
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 2.0,
+     "visible": "B1:S1"
+    },
+    {
+     "scroll_row": 2.0,
+     "scroll_col": 1.0,
+     "visible": "A2:A18"
+    },
+    {
+     "scroll_row": 2.0,
+     "scroll_col": 2.0,
+     "visible": "B2:S18"
+    }
+   ]
+  },
+  "scrolled_to_row40_colI": {
+   "freeze": true,
+   "split_row": 1.0,
+   "split_col": 1.0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 1.0,
+     "visible": "A1"
+    },
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 9.0,
+     "visible": "I1:Y1"
+    },
+    {
+     "scroll_row": 40.0,
+     "scroll_col": 1.0,
+     "visible": "A40:A56"
+    },
+    {
+     "scroll_row": 40.0,
+     "scroll_col": 9.0,
+     "visible": "I40:Y56"
+    }
+   ]
+  },
+  "scroll_back_to_1": {
+   "freeze": true,
+   "split_row": 1.0,
+   "split_col": 1.0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 1.0,
+     "visible": "A1"
+    },
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 2.0,
+     "visible": "B1:S1"
+    },
+    {
+     "scroll_row": 2.0,
+     "scroll_col": 1.0,
+     "visible": "A2:A18"
+    },
+    {
+     "scroll_row": 2.0,
+     "scroll_col": 2.0,
+     "visible": "B2:S18"
+    }
+   ]
+  }
+ },
+ "scrolled_trap": {
+  "cmd": "FreezePanes",
+  "select": "C20",
+  "pre_scroll": [
+   15,
+   1
+  ],
+  "after": {
+   "freeze": true,
+   "split_row": 5.0,
+   "split_col": 2.0,
+   "panes": [
+    {
+     "scroll_row": 15.0,
+     "scroll_col": 1.0,
+     "visible": "A15:B19"
+    },
+    {
+     "scroll_row": 15.0,
+     "scroll_col": 3.0,
+     "visible": "C15:S19"
+    },
+    {
+     "scroll_row": 20.0,
+     "scroll_col": 1.0,
+     "visible": "A20:B32"
+    },
+    {
+     "scroll_row": 20.0,
+     "scroll_col": 3.0,
+     "visible": "C20:S32"
+    }
+   ]
+  },
+  "scrolled_to_row40_colI": {
+   "freeze": true,
+   "split_row": 5.0,
+   "split_col": 2.0,
+   "panes": [
+    {
+     "scroll_row": 15.0,
+     "scroll_col": 1.0,
+     "visible": "A15:B19"
+    },
+    {
+     "scroll_row": 15.0,
+     "scroll_col": 9.0,
+     "visible": "I15:W19"
+    },
+    {
+     "scroll_row": 40.0,
+     "scroll_col": 1.0,
+     "visible": "A40:B52"
+    },
+    {
+     "scroll_row": 40.0,
+     "scroll_col": 9.0,
+     "visible": "I40:W52"
+    }
+   ]
+  },
+  "scroll_back_to_1": {
+   "freeze": true,
+   "split_row": 5.0,
+   "split_col": 2.0,
+   "panes": [
+    {
+     "scroll_row": 15.0,
+     "scroll_col": 1.0,
+     "visible": "A15:B19"
+    },
+    {
+     "scroll_row": 15.0,
+     "scroll_col": 3.0,
+     "visible": "C15:S19"
+    },
+    {
+     "scroll_row": 20.0,
+     "scroll_col": 1.0,
+     "visible": "A20:B32"
+    },
+    {
+     "scroll_row": 20.0,
+     "scroll_col": 3.0,
+     "visible": "C20:S32"
+    }
+   ]
+  }
+ },
+ "a1": {
+  "cmd": "FreezePanes",
+  "select": "A1",
+  "pre_scroll": null,
+  "after": {
+   "freeze": true,
+   "split_row": 9.0,
+   "split_col": 9.0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 1.0,
+     "visible": "A1:I9"
+    },
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 10.0,
+     "visible": "J1:S9"
+    },
+    {
+     "scroll_row": 10.0,
+     "scroll_col": 1.0,
+     "visible": "A10:I18"
+    },
+    {
+     "scroll_row": 10.0,
+     "scroll_col": 10.0,
+     "visible": "J10:S18"
+    }
+   ]
+  },
+  "scrolled_to_row40_colI": {
+   "freeze": true,
+   "split_row": 9.0,
+   "split_col": 9.0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 1.0,
+     "visible": "A1:I9"
+    },
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 10.0,
+     "visible": "J1:S9"
+    },
+    {
+     "scroll_row": 40.0,
+     "scroll_col": 1.0,
+     "visible": "A40:I48"
+    },
+    {
+     "scroll_row": 40.0,
+     "scroll_col": 10.0,
+     "visible": "J40:S48"
+    }
+   ]
+  },
+  "scroll_back_to_1": {
+   "freeze": true,
+   "split_row": 9.0,
+   "split_col": 9.0,
+   "panes": [
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 1.0,
+     "visible": "A1:I9"
+    },
+    {
+     "scroll_row": 1.0,
+     "scroll_col": 10.0,
+     "visible": "J1:S9"
+    },
+    {
+     "scroll_row": 10.0,
+     "scroll_col": 1.0,
+     "visible": "A10:I18"
+    },
+    {
+     "scroll_row": 10.0,
+     "scroll_col": 10.0,
+     "visible": "J10:S18"
+    }
+   ]
+  }
+ },
+ "views": {
+  "page_break_preview": {
+   "view": 2,
+   "freeze_before": true,
+   "freeze_prop_in_view": true,
+   "enabled": {
+    "ViewFreezePanesGallery": true,
+    "FreezePanes": true,
+    "FreezeTopRow": true,
+    "FreezeFirstColumn": true
+   },
+   "freeze_back_in_normal": true
+  },
+  "page_layout": {
+   "view": 3,
+   "freeze_before": true,
+   "freeze_prop_in_view": false,
+   "enabled": {
+    "ViewFreezePanesGallery": false,
+    "FreezePanes": false,
+    "FreezeTopRow": false,
+    "FreezeFirstColumn": false
+   },
+   "freeze_back_in_normal": false
+  },
+  "normal_enabled": {
+   "ViewFreezePanesGallery": true,
+   "FreezePanes": true,
+   "FreezeTopRow": true,
+   "FreezeFirstColumn": true
+  }
+ },
+ "print": {
+  "freeze_on": true,
+  "toggle_note": "ExecuteMso('FreezePanes') 를 고정된 창에서 부르면 고정이 풀린다(첫 실행 freeze_on False)",
+  "freeze_only": {
+   "pages": 4,
+   "first_line_each_page": [
+    "No. Item Jan Feb Mar Apr May Jun Jul Aug",
+    "43 Stapler (blue) 63 7 47 37 13 16 27 55",
+    "Sep Oct Nov Dec Total",
+    "82 39 8 84 478"
+   ]
+  },
+  "print_titles": {
+   "pages": 4,
+   "first_line_each_page": [
+    "No. Item Jan Feb Mar Apr May Jun Jul Aug",
+    "No. Item Jan Feb Mar Apr May Jun Jul Aug",
+    "Sep Oct Nov Dec Total",
+    "Sep Oct Nov Dec Total"
+   ]
+  },
+  "print_titles_rc": {
+   "pages": 4,
+   "first_line_each_page": [
+    "No. Item Jan Feb Mar Apr May Jun Jul Aug",
+    "No. Item Jan Feb Mar Apr May Jun Jul Aug",
+    "No. Item Sep Oct Nov Dec Total",
+    "No. Item Sep Oct Nov Dec Total"
+   ]
+  }
+ },
+ "answer_state": {
+  "freeze": true,
+  "split_row": 1.0,
+  "split_col": 2.0,
+  "panes": [
+   {
+    "scroll_row": 1.0,
+    "scroll_col": 1.0,
+    "visible": "A1:B1"
+   },
+   {
+    "scroll_row": 1.0,
+    "scroll_col": 3.0,
+    "visible": "C1:S1"
+   },
+   {
+    "scroll_row": 2.0,
+    "scroll_col": 1.0,
+    "visible": "A2:B18"
+   },
+   {
+    "scroll_row": 2.0,
+    "scroll_col": 3.0,
+    "visible": "C2:S18"
+   }
+  ]
+ }
+}
