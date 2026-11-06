@@ -29,6 +29,7 @@
 | 기초 | 1 | [엑셀 줄바꿈 — 셀 안에서 줄 바꾸기](01_기초/01_엑셀_줄바꿈/) · [강의](https://www.coding-now.com/blog/excel/excel-basic-01-line-break) | Alt+Enter · 자동 줄 바꿈 · Ctrl+J 로 없애기 |
 | 기초 | 2 | [엑셀 표 만들기 — 테두리 표와 표 서식(Ctrl+T)](01_기초/02_엑셀_표만들기/) · [강의](https://www.coding-now.com/blog/excel/excel-basic-02-table) | 새 줄·계산 열·요약 행(SUBTOTAL 109)·한 열 정렬 함정 |
 | 기초 | 3 | [엑셀 틀 고정 — 첫 행 · 첫 열 · 원하는 칸 기준](01_기초/03_엑셀_틀고정/) · [강의](https://www.coding-now.com/blog/excel/excel-basic-03-freeze-panes) | 고른 칸 위·왼쪽 고정 · 내린 채 고정 함정 · 페이지 레이아웃에서 풀림 · 인쇄 제목 |
+| 기초 | 4 | [엑셀 자동 채우기 · 행 추가 — 채우기 핸들 · 평일 · 합계가 안 늘 때](01_기초/04_엑셀_자동채우기_행추가/) · [강의](https://www.coding-now.com/blog/excel/excel-basic-04-autofill-insert-row) | 1 한 칸은 복사 · 날짜는 주말까지 · 계열… 평일 · 요일은 TEXT · 합계 바로 위 행은 SUM 밖 |
 
 ---
 만든 곳: [코딩나우 CODINGNOW](https://www.coding-now.com)
