@@ -1,0 +1,160 @@
+{
+ "run": "2026-11-07T10:36:30",
+ "lang": "en",
+ "build": 20527.0,
+ "labels": {
+  "MergeCenterMenu": "병합",
+  "MergeCenter": "병합하고 가운데 맞춤",
+  "MergeCellsAcross": "전체 병합",
+  "MergeCells": "셀 병합",
+  "UnmergeCells": "셀 분할...",
+  "SortDialog": "정렬...",
+  "Filter": "필터"
+ },
+ "merge_keeps_top_left": {
+  "before": [
+   "A",
+   "B",
+   "C"
+  ],
+  "after_merge": [
+   "A",
+   null,
+   null
+  ],
+  "after_unmerge": [
+   "A",
+   null,
+   null
+  ]
+ },
+ "merge_across": {
+  "E1_area": "$E$1:$G$1",
+  "E2_area": "$E$2:$G$2",
+  "values": [
+   "e1",
+   null,
+   "e2",
+   null
+  ]
+ },
+ "table_merge_areas": [
+  "$A$2:$A$4",
+  "$A$5:$A$7"
+ ],
+ "sort_with_merged": {
+  "ok": false,
+  "message": "이 작업을 수행하려면 병합하려는 모든 셀의 크기가 동일해야 합니다."
+ },
+ "table_after_sort_try": [
+  [
+   "Class 1",
+   "Kim",
+   82.0
+  ],
+  [
+   null,
+   "Lee",
+   95.0
+  ],
+  [
+   null,
+   "Park",
+   77.0
+  ],
+  [
+   "Class 2",
+   "Choi",
+   88.0
+  ],
+  [
+   null,
+   "Jung",
+   91.0
+  ],
+  [
+   null,
+   "Kang",
+   70.0
+  ]
+ ],
+ "filter_merged": {
+  "criteria": "Class 1",
+  "visible_rows": [
+   2
+  ],
+  "visible_names": [
+   "Kim"
+  ]
+ },
+ "unmerge_fill": {
+  "after_unmerge": [
+   "Class 1",
+   null,
+   null,
+   "Class 2",
+   null,
+   null
+  ],
+  "blank_count": 4,
+  "filled": [
+   "Class 1",
+   "Class 1",
+   "Class 1",
+   "Class 2",
+   "Class 2",
+   "Class 2"
+  ],
+  "blank_address": "$A$3:$A$4,$A$6:$A$7"
+ },
+ "filter_after_fill": {
+  "visible_rows": [
+   2,
+   3,
+   4
+  ],
+  "visible_names": [
+   "Kim",
+   "Lee",
+   "Park"
+  ]
+ },
+ "sort_after_fill": [
+  [
+   "Class 1",
+   "Lee",
+   95.0
+  ],
+  [
+   "Class 2",
+   "Jung",
+   91.0
+  ],
+  [
+   "Class 2",
+   "Choi",
+   88.0
+  ],
+  [
+   "Class 1",
+   "Kim",
+   82.0
+  ],
+  [
+   "Class 1",
+   "Park",
+   77.0
+  ],
+  [
+   "Class 2",
+   "Kang",
+   70.0
+  ]
+ ],
+ "center_across": {
+  "A1_merge": false,
+  "B1_value": null,
+  "align_B1": 7,
+  "sort_ok": true
+ }
+}
