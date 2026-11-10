@@ -1,0 +1,139 @@
+{
+ "run": "2026-11-10T09:25:09",
+ "lang": "ko",
+ "build": 20527.0,
+ "labels": {
+  "AutoSum": "합계",
+  "AutoSumMenu": "자동 합계",
+  "FunctionsSumInsertGallery": "ERR (-2147352567, '예외가 발생했습니다.', (0, None, None, None, 0, -21470",
+  "Filter": "필터",
+  "ConvertToNumber": "ERR (-2147352567, '예외가 발생했습니다.', (0, None, None, None, 0, -21470"
+ },
+ "b5_is_text": {
+  "formula": "=ISTEXT(B5)",
+  "text": "TRUE"
+ },
+ "b5_error_flag": true,
+ "formulas": {
+  "sum": {
+   "formula": "=SUM(B2:B8)",
+   "text": "72"
+  },
+  "plus": {
+   "formula": "=B2+B3+B4+B5+B6+B7+B8",
+   "text": "90"
+  },
+  "average": {
+   "formula": "=AVERAGE(B2:B8)",
+   "text": "14.4"
+  },
+  "count": {
+   "formula": "=COUNT(B2:B8)",
+   "text": "5"
+  },
+  "counta": {
+   "formula": "=COUNTA(B2:B8)",
+   "text": "6"
+  },
+  "averageif_pos": {
+   "formula": "=AVERAGEIF(B2:B8,\">0\")",
+   "text": "18"
+  },
+  "average_plus_text": {
+   "formula": "=AVERAGE(B2,B3,B5,B6,B7,B8)",
+   "text": "14.4"
+  },
+  "sum_cells_direct": {
+   "formula": "=SUM(12,15,\"18\",20,25,0)",
+   "text": "90"
+  }
+ },
+ "autosum_single": {
+  "formula": "=SUM(B6:B8)",
+  "text": "45",
+  "enter_sent_to": 1
+ },
+ "autosum_range": {
+  "formula": "=SUM(B2:B8)",
+  "text": "72"
+ },
+ "fixed": {
+  "sum": {
+   "formula": "=SUM(B2:B8)",
+   "text": "90"
+  },
+  "average": {
+   "formula": "=AVERAGE(B2:B8)",
+   "text": "15"
+  },
+  "averageif_pos": {
+   "formula": "=AVERAGEIF(B2:B8,\">0\")",
+   "text": "18"
+  },
+  "count": {
+   "formula": "=COUNT(B2:B8)",
+   "text": "6"
+  }
+ },
+ "hidden": {
+  "sum": {
+   "formula": "=SUM(B2:B8)",
+   "text": "90"
+  },
+  "subtotal109": {
+   "formula": "=SUBTOTAL(109,B2:B8)",
+   "text": "65"
+  },
+  "subtotal9": {
+   "formula": "=SUBTOTAL(9,B2:B8)",
+   "text": "90"
+  },
+  "aggregate": {
+   "formula": "=AGGREGATE(9,5,B2:B8)",
+   "text": "65"
+  }
+ },
+ "filter": {
+  "visible_rows": [
+   3,
+   5,
+   6,
+   7
+  ],
+  "visible": [
+   [
+    "화",
+    15.0
+   ],
+   [
+    "목",
+    18.0
+   ],
+   [
+    "금",
+    20.0
+   ],
+   [
+    "토",
+    25.0
+   ]
+  ],
+  "sum": {
+   "formula": "=SUM(B2:B8)",
+   "text": "90"
+  },
+  "subtotal9": {
+   "formula": "=SUBTOTAL(9,B2:B8)",
+   "text": "78"
+  },
+  "subtotal109": {
+   "formula": "=SUBTOTAL(109,B2:B8)",
+   "text": "78"
+  },
+  "autosum": {
+   "formula": "=SUBTOTAL(9,B5:B8)",
+   "text": "63",
+   "enter_sent_to": 1
+  }
+ }
+}
