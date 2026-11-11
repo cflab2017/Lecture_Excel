@@ -1,0 +1,168 @@
+{
+ "run": "2026-11-11T09:52:15",
+ "lang": "en",
+ "build": 20527.0,
+ "source": {
+  "file": "fees.xlsx",
+  "c3": "=IF(B3=\"O\",Settings!$B$1,0)",
+  "c9": "40,000",
+  "sheets": [
+   "Nov",
+   "Settings"
+  ]
+ },
+ "copy_within": {
+  "new_name": "Nov (2)",
+  "c3": "=IF(B3=\"O\",Settings!$B$1,0)",
+  "c9": "40,000",
+  "widths": {
+   "A": 12.0,
+   "B": 10.0,
+   "C": 12.0,
+   "D": 22.0
+  },
+  "sheets": [
+   "Nov",
+   "Nov (2)",
+   "Settings"
+  ],
+  "renamed": "Dec",
+  "second_copy_name": "Nov (2)"
+ },
+ "copy_to_new_book": {
+  "sheets": [
+   "Nov"
+  ],
+  "c3": "=IF(B3=\"O\",[fees.xlsx]Settings!$B$1,0)",
+  "c9": "40,000",
+  "links": [
+   "fees.xlsx"
+  ],
+  "widths": {
+   "A": 12.0,
+   "B": 10.0,
+   "C": 12.0,
+   "D": 22.0
+  }
+ },
+ "copy_with_settings": {
+  "sheets": [
+   "Nov",
+   "Settings"
+  ],
+  "c3": "=IF(B3=\"O\",Settings!$B$1,0)",
+  "links": []
+ },
+ "range_paste": {
+  "widths": {
+   "A": 8.38,
+   "B": 8.38,
+   "C": 8.38,
+   "D": 8.38
+  },
+  "c3": "=IF(B3=\"O\",Settings!$B$1,0)",
+  "standard_width": 8.38
+ },
+ "protect": {
+  "default_locked": {
+   "B3": true,
+   "C3": true
+  },
+  "protect_no_pw": {
+   "ProtectContents": true,
+   "write_B3": {
+    "ok": false,
+    "error": "변경하려는 셀 또는 차트가 보호된 시트에 있습니다. 변경하려면 시트의 보호를 해제하세요. 암호를 입력해야 할 수도 있습니다."
+   },
+   "allow_format_cells": false,
+   "allow_insert_rows": false,
+   "allow_sort": false
+  },
+  "unprotect_no_pw": {
+   "ok": true,
+   "value": null
+  },
+  "unlocked_inputs": {
+   "write_B5": {
+    "ok": true,
+    "value": null
+   },
+   "c9_after": "50,000",
+   "write_C3": {
+    "ok": false,
+    "error": "변경하려는 셀 또는 차트가 보호된 시트에 있습니다. 변경하려면 시트의 보호를 해제하세요. 암호를 입력해야 할 수도 있습니다."
+   },
+   "write_A3": {
+    "ok": false,
+    "error": "변경하려는 셀 또는 차트가 보호된 시트에 있습니다. 변경하려면 시트의 보호를 해제하세요. 암호를 입력해야 할 수도 있습니다."
+   },
+   "c3_formula_via_com": {
+    "ok": false,
+    "error": "(-2147352567, '예외가 발생했습니다.', (0, None, None, None, 0, -2146827284), None)"
+   },
+   "c3_text": "10,000"
+  },
+  "copy_of_protected": {
+   "name": "Nov (2)",
+   "ProtectContents": true,
+   "B3_locked": false,
+   "write_B3": {
+    "ok": true,
+    "value": null
+   },
+   "write_C3": {
+    "ok": false,
+    "error": "변경하려는 셀 또는 차트가 보호된 시트에 있습니다. 변경하려면 시트의 보호를 해제하세요. 암호를 입력해야 할 수도 있습니다."
+   }
+  },
+  "rename_protected": {
+   "ok": true,
+   "value": null
+  },
+  "delete_protected": {
+   "ok": true,
+   "value": null
+  },
+  "sheets_after_delete": [
+   "Nov",
+   "Dec",
+   "Settings"
+  ],
+  "structure": {
+   "ProtectStructure": true,
+   "delete": {
+    "ok": false,
+    "error": "Worksheet 클래스 중 Delete 메서드에 오류가 있습니다."
+   },
+   "rename": {
+    "ok": false,
+    "error": "(-2147352567, '예외가 발생했습니다.', (0, None, None, None, 0, -2146827284), None)"
+   },
+   "add": {
+    "ok": false,
+    "error": "Sheets 클래스 중 Add 메서드에 오류가 있습니다."
+   },
+   "copy_within": {
+    "ok": false,
+    "error": "통합 문서가 보호되어 있어서 변경할 수 없습니다."
+   },
+   "sheets": [
+    "Nov",
+    "Dec",
+    "Settings"
+   ]
+  },
+  "password": {
+   "unprotect_without": "prompts for password (dialog) — not called",
+   "unprotect_wrong": {
+    "ok": false,
+    "error": "암호가 잘못되었습니다. &lt;Caps Lock&gt; 키가 꺼져 있는지, 대소문자를 정확히 구분하여 입력하였는지 확인하세요."
+   },
+   "unprotect_right": {
+    "ok": true,
+    "value": null
+   },
+   "ProtectContents_after": false
+  }
+ }
+}

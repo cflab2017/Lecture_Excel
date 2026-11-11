@@ -1,0 +1,57 @@
+{
+ "s1": {
+  "title": "이동/복사",
+  "class": "NUIDialog",
+  "offset": [
+   346,
+   201
+  ],
+  "size": [
+   320,
+   411
+  ],
+  "show": false
+ },
+ "s2_tabs": [
+  "11월",
+  "11월 (2)",
+  "설정"
+ ],
+ "s3": {
+  "book": "통합 문서1",
+  "c3": "=IF(B3=\"O\",[실습.xlsx]설정!$B$1,0)",
+  "links": [
+   "실습.xlsx"
+  ]
+ },
+ "s4": {
+  "title": "셀 서식",
+  "class": "bosa_sdm_XL9",
+  "offset": [
+   227,
+   125
+  ],
+  "size": [
+   559,
+   563
+  ],
+  "show": false
+ },
+ "s5": {
+  "title": "시트 보호",
+  "class": "NUIDialog",
+  "offset": [
+   359,
+   193
+  ],
+  "size": [
+   295,
+   427
+  ],
+  "show": false
+ },
+ "s6": {
+  "err": "warning not found",
+  "c3_text": "10,000"
+ }
+}

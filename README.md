@@ -32,6 +32,7 @@
 | 기초 | 4 | [엑셀 자동 채우기 · 행 추가 — 채우기 핸들 · 평일 · 합계가 안 늘 때](01_기초/04_엑셀_자동채우기_행추가/) · [강의](https://www.coding-now.com/blog/excel/excel-basic-04-autofill-insert-row) | 1 한 칸은 복사 · 날짜는 주말까지 · 계열… 평일 · 요일은 TEXT · 합계 바로 위 행은 SUM 밖 |
 | 기초 | 5 | [엑셀 셀 병합 — 병합하고 가운데 맞춤, 정렬 오류 · 필터에 한 줄만 나올 때](01_기초/05_엑셀_셀병합/) · [강의](https://www.coding-now.com/blog/excel/excel-basic-05-merge-cells) | 왼쪽 위 값만 남음 · 정렬 오류 · 필터 한 줄 · 선택 영역의 가운데로 |
 | 기초 | 6 | [엑셀 합계 · 평균 — 자동 합계가 일부만 잡을 때, 빈칸과 0, 글자 숫자](01_기초/06_엑셀_합계평균/) · [강의](https://www.coding-now.com/blog/excel/excel-basic-06-sum-average) | SUM 72 vs + 90 · 자동 합계 =SUM(B7:B9) · 평균 14.4→15 · SUBTOTAL 109 |
+| 기초 | 7 | [엑셀 시트 복사 · 시트 보호 — 다른 파일로 복사하면 생기는 외부 연결, 일부 칸만 입력되게](01_기초/07_엑셀_시트복사보호/) · [강의](https://www.coding-now.com/blog/excel/excel-basic-07-copy-protect-sheet) | 복사본 '11월 (2)' · 새 통합 문서로 [실습.xlsx]설정!$B$1 · 범위 복사 열 너비 8.38 · 잠금 해제 칸만 입력 · 시트 보호해도 삭제됨 → 통합 문서 보호 |
 
 ---
 만든 곳: [코딩나우 CODINGNOW](https://www.coding-now.com)
