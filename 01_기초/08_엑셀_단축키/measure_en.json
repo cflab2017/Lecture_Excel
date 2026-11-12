@@ -1,0 +1,96 @@
+{
+  "when": "2026-11-12T16:04:04",
+  "file": "practice.xlsx",
+  "ctrl_down_from_E2": [
+    "E7",
+    "E9",
+    "E13",
+    "E1048576"
+  ],
+  "ctrl_shift_down_from_E2": "E2:E7",
+  "ctrl_up_from_E9": "E7",
+  "ctrl_home": "A1",
+  "ctrl_end": "F14",
+  "ctrl_end_after_clear_H30": "H30",
+  "ctrl_end_after_save_reopen": "F14",
+  "alt_equal_E14": {
+    "formula": "=SUM(E9:E13)",
+    "value": 48100.0
+  },
+  "alt_equal_with_E2_E13_selected": {
+    "formula": "=SUM(E2:E13)",
+    "value": 116200.0
+  },
+  "f4_cycle_from_=E2/E14": [
+    "=E2/$E$14",
+    "=E2/E$14",
+    "=E2/E$14",
+    "=E2/$E14"
+  ],
+  "f4_repeat_bold": {
+    "B2": true,
+    "B9_after_F4": true,
+    "B10_untouched": false
+  },
+  "ctrl_semicolon": {
+    "A16_text": "2026-11-12",
+    "A16_formula": "46338",
+    "A16_format": "yyyy-mm-dd",
+    "B16_text": "4:04 PM",
+    "B16_formula": "0.669444444444444",
+    "B16_format": "h:mm AM/PM",
+    "today": "2026-11-12"
+  },
+  "ctrl_enter_H2_H4": [
+    "OK",
+    "OK",
+    "OK"
+  ],
+  "ctrl_enter_selection_after": "H2:H4",
+  "ctrl_z_after_ctrl_enter": [
+    null,
+    null,
+    null
+  ],
+  "ctrl_space_from_E5": "E:E",
+  "shift_space_from_E5": "5:5",
+  "ctrl_minus_row8": {
+    "A8_now": "2026-11-04",
+    "D13_now": "Total",
+    "E13_now": "=SUM(E2:E12)"
+  },
+  "ctrl_z_after_delete": {
+    "A8": "",
+    "A9": "2026-11-04"
+  },
+  "ctrl_shift_equal_single_cell": {
+    "dialog": true,
+    "title": "삽입"
+  },
+  "ctrl_minus_single_cell": {
+    "dialog": true,
+    "title": "삭제"
+  },
+  "ctrl_1": {
+    "dialog": true,
+    "title": "셀 서식"
+  },
+  "ctrl_backtick": {
+    "display_formulas": true,
+    "E2_shown": "=C2*D2"
+  },
+  "ctrl_backtick_again": false,
+  "ctrl_pagedown": {
+    "from": "Orders",
+    "to": "Sheet1"
+  },
+  "ctrl_pageup": "Orders",
+  "flow_delete_blank_then_alt_equal": {
+    "D13": "Total",
+    "E13_formula": "=SUM(E2:E12)",
+    "E13_value": 116200.0,
+    "ctrl_down_from_E2": "E13"
+  },
+  "foreground_unchanged_by_us": true,
+  "fg_before_was_excel": false
+}
