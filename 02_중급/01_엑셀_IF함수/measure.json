@@ -1,0 +1,406 @@
+{
+ "run": "2026-11-14T08:34:14",
+ "notice": "※ 대한상공회의소 문제가 아닌 연습용 자작 문제입니다. 이름 · 점수는 모두 가상입니다.",
+ "problems": [
+  {
+   "n": 1,
+   "key": "q1",
+   "level": "기본",
+   "text": "[표1]에서 출석(회)[C3:C10]이 8 이상이면 '수료', 그 외에는 '미수료'를 수료 여부[D3:D10]에 표시하시오.",
+   "use": "IF 함수 사용",
+   "first_cell_formula": "=IF(C3>=8,\"수료\",\"미수료\")",
+   "formulas": {
+    "D3": "=IF(C3>=8,\"수료\",\"미수료\")",
+    "D4": "=IF(C4>=8,\"수료\",\"미수료\")",
+    "D5": "=IF(C5>=8,\"수료\",\"미수료\")",
+    "D6": "=IF(C6>=8,\"수료\",\"미수료\")",
+    "D7": "=IF(C7>=8,\"수료\",\"미수료\")",
+    "D8": "=IF(C8>=8,\"수료\",\"미수료\")",
+    "D9": "=IF(C9>=8,\"수료\",\"미수료\")",
+    "D10": "=IF(C10>=8,\"수료\",\"미수료\")"
+   },
+   "values": {
+    "D3": "수료",
+    "D4": "미수료",
+    "D5": "수료",
+    "D6": "수료",
+    "D7": "미수료",
+    "D8": "수료",
+    "D9": "수료",
+    "D10": "미수료"
+   },
+   "ok": true,
+   "count": {
+    "미수료": 3,
+    "수료": 5
+   }
+  },
+  {
+   "n": 2,
+   "key": "q2",
+   "level": "응용",
+   "text": "[표2]에서 필기[B14:B21]와 실기[C14:C21]가 모두 60 이상이고, 출석(회)[D14:D21]이 8 이상이거나 보충 수강[E14:E21]이 'O'이면 '합격', 그 외에는 '불합격'을 결과[F14:F21]에 표시하시오.",
+   "use": "IF, AND, OR 함수 사용",
+   "first_cell_formula": "=IF(AND(B14>=60,C14>=60,OR(D14>=8,E14=\"O\")),\"합격\",\"불합격\")",
+   "formulas": {
+    "F14": "=IF(AND(B14>=60,C14>=60,OR(D14>=8,E14=\"O\")),\"합격\",\"불합격\")",
+    "F15": "=IF(AND(B15>=60,C15>=60,OR(D15>=8,E15=\"O\")),\"합격\",\"불합격\")",
+    "F16": "=IF(AND(B16>=60,C16>=60,OR(D16>=8,E16=\"O\")),\"합격\",\"불합격\")",
+    "F17": "=IF(AND(B17>=60,C17>=60,OR(D17>=8,E17=\"O\")),\"합격\",\"불합격\")",
+    "F18": "=IF(AND(B18>=60,C18>=60,OR(D18>=8,E18=\"O\")),\"합격\",\"불합격\")",
+    "F19": "=IF(AND(B19>=60,C19>=60,OR(D19>=8,E19=\"O\")),\"합격\",\"불합격\")",
+    "F20": "=IF(AND(B20>=60,C20>=60,OR(D20>=8,E20=\"O\")),\"합격\",\"불합격\")",
+    "F21": "=IF(AND(B21>=60,C21>=60,OR(D21>=8,E21=\"O\")),\"합격\",\"불합격\")"
+   },
+   "values": {
+    "F14": "합격",
+    "F15": "불합격",
+    "F16": "합격",
+    "F17": "불합격",
+    "F18": "불합격",
+    "F19": "합격",
+    "F20": "합격",
+    "F21": "불합격"
+   },
+   "ok": true,
+   "count": {
+    "불합격": 4,
+    "합격": 4
+   }
+  },
+  {
+   "n": 3,
+   "key": "q3",
+   "level": "함정",
+   "text": "[표3]에서 점수[B25:B32]가 90 이상이면 'A', 80 이상이면 'B', 70 이상이면 'C', 그 외에는 'D'를 등급[C25:C32]에 표시하시오.",
+   "use": "IF 함수 사용",
+   "first_cell_formula": "=IF(B25>=90,\"A\",IF(B25>=80,\"B\",IF(B25>=70,\"C\",\"D\")))",
+   "formulas": {
+    "C25": "=IF(B25>=90,\"A\",IF(B25>=80,\"B\",IF(B25>=70,\"C\",\"D\")))",
+    "C26": "=IF(B26>=90,\"A\",IF(B26>=80,\"B\",IF(B26>=70,\"C\",\"D\")))",
+    "C27": "=IF(B27>=90,\"A\",IF(B27>=80,\"B\",IF(B27>=70,\"C\",\"D\")))",
+    "C28": "=IF(B28>=90,\"A\",IF(B28>=80,\"B\",IF(B28>=70,\"C\",\"D\")))",
+    "C29": "=IF(B29>=90,\"A\",IF(B29>=80,\"B\",IF(B29>=70,\"C\",\"D\")))",
+    "C30": "=IF(B30>=90,\"A\",IF(B30>=80,\"B\",IF(B30>=70,\"C\",\"D\")))",
+    "C31": "=IF(B31>=90,\"A\",IF(B31>=80,\"B\",IF(B31>=70,\"C\",\"D\")))",
+    "C32": "=IF(B32>=90,\"A\",IF(B32>=80,\"B\",IF(B32>=70,\"C\",\"D\")))"
+   },
+   "values": {
+    "C25": "A",
+    "C26": "A",
+    "C27": "B",
+    "C28": "B",
+    "C29": "C",
+    "C30": "C",
+    "C31": "D",
+    "C32": "D"
+   },
+   "ok": true,
+   "count": {
+    "A": 2,
+    "B": 2,
+    "C": 2,
+    "D": 2
+   }
+  }
+ ],
+ "traps": [
+  {
+   "key": "q2_no_quote",
+   "why": "'O' 를 따옴표 없이 씀 → 엑셀이 O 를 이름으로 읽음",
+   "formula": "=IF(AND(B14>=60,C14>=60,OR(D14>=8,E14=O)),\"합격\",\"불합격\")",
+   "range": "F14:F21",
+   "values": {
+    "F14": "#NAME?",
+    "F15": "#NAME?",
+    "F16": "#NAME?",
+    "F17": "#NAME?",
+    "F18": "#NAME?",
+    "F19": "#NAME?",
+    "F20": "#NAME?",
+    "F21": "#NAME?"
+   },
+   "wrong_vs_answer": 8,
+   "shot": {
+    "png": "shots/trap_q2_no_quote.png",
+    "size": [
+     827,
+     391
+    ],
+    "cols_found": 8,
+    "rows_found": 12,
+    "need": [
+     8,
+     12
+    ],
+    "foreground_changed": false
+   }
+  },
+  {
+   "key": "q2_and_only",
+   "why": "OR 부분을 빼먹음(출석 · 보충 수강 조건 없음)",
+   "formula": "=IF(AND(B14>=60,C14>=60),\"합격\",\"불합격\")",
+   "range": "F14:F21",
+   "values": {
+    "F14": "합격",
+    "F15": "불합격",
+    "F16": "합격",
+    "F17": "불합격",
+    "F18": "합격",
+    "F19": "합격",
+    "F20": "합격",
+    "F21": "불합격"
+   },
+   "wrong_vs_answer": 1,
+   "shot": {
+    "png": "shots/trap_q2_and_only.png",
+    "size": [
+     827,
+     391
+    ],
+    "cols_found": 8,
+    "rows_found": 12,
+    "need": [
+     8,
+     12
+    ],
+    "foreground_changed": false
+   }
+  },
+  {
+   "key": "q3_small_first",
+   "why": "작은 기준(70)부터 물음 → 70 이상이면 모두 첫 IF 에서 'C'",
+   "formula": "=IF(B25>=70,\"C\",IF(B25>=80,\"B\",IF(B25>=90,\"A\",\"D\")))",
+   "range": "C25:C32",
+   "values": {
+    "C25": "C",
+    "C26": "C",
+    "C27": "C",
+    "C28": "C",
+    "C29": "C",
+    "C30": "C",
+    "C31": "D",
+    "C32": "D"
+   },
+   "wrong_vs_answer": 4,
+   "shot": {
+    "png": "shots/trap_q3_small_first.png",
+    "size": [
+     449,
+     391
+    ],
+    "cols_found": 5,
+    "rows_found": 12,
+    "need": [
+     5,
+     12
+    ],
+    "foreground_changed": false
+   }
+  },
+  {
+   "key": "q3_greater",
+   "why": "'이상'을 > 로 씀 → 90 · 80 · 70 딱 맞는 점수가 한 등급 내려감",
+   "formula": "=IF(B25>90,\"A\",IF(B25>80,\"B\",IF(B25>70,\"C\",\"D\")))",
+   "range": "C25:C32",
+   "values": {
+    "C25": "A",
+    "C26": "B",
+    "C27": "B",
+    "C28": "C",
+    "C29": "C",
+    "C30": "D",
+    "C31": "D",
+    "C32": "D"
+   },
+   "wrong_vs_answer": 3,
+   "shot": {
+    "png": "shots/trap_q3_greater.png",
+    "size": [
+     449,
+     391
+    ],
+    "cols_found": 5,
+    "rows_found": 12,
+    "need": [
+     5,
+     12
+    ],
+    "foreground_changed": false
+   }
+  },
+  {
+   "key": "q1_no_quote_text",
+   "why": "'수료' 를 따옴표 없이 씀",
+   "formula": "=IF(C3>=8,수료,미수료)",
+   "range": "D3:D10",
+   "values": {
+    "D3": "#NAME?",
+    "D4": "#NAME?",
+    "D5": "#NAME?",
+    "D6": "#NAME?",
+    "D7": "#NAME?",
+    "D8": "#NAME?",
+    "D9": "#NAME?",
+    "D10": "#NAME?"
+   },
+   "wrong_vs_answer": 8,
+   "shot": {
+    "png": "shots/trap_q1_no_quote_text.png",
+    "size": [
+     579,
+     391
+    ],
+    "cols_found": 6,
+    "rows_found": 12,
+    "need": [
+     6,
+     12
+    ],
+    "foreground_changed": false
+   }
+  }
+ ],
+ "shots": {
+  "q1_result": {
+   "png": "shots/q1_result.png",
+   "size": [
+    579,
+    391
+   ],
+   "cols_found": 6,
+   "rows_found": 12,
+   "need": [
+    6,
+    12
+   ],
+   "foreground_changed": false
+  },
+  "q1_formula": {
+   "png": "shots/q1_formula.png",
+   "size": [
+    818,
+    358
+   ],
+   "cols_found": 6,
+   "rows_found": 11,
+   "need": [
+    6,
+    11
+   ],
+   "foreground_changed": false
+  },
+  "q2_result": {
+   "png": "shots/q2_result.png",
+   "size": [
+    827,
+    391
+   ],
+   "cols_found": 8,
+   "rows_found": 12,
+   "need": [
+    8,
+    12
+   ],
+   "foreground_changed": false
+  },
+  "q2_formula": {
+   "png": "shots/q2_formula.png",
+   "size": [
+    1151,
+    272
+   ],
+   "cols_found": 8,
+   "rows_found": 11,
+   "need": [
+    8,
+    11
+   ],
+   "foreground_changed": false
+  },
+  "q3_result": {
+   "png": "shots/q3_result.png",
+   "size": [
+    449,
+    391
+   ],
+   "cols_found": 5,
+   "rows_found": 12,
+   "need": [
+    5,
+    12
+   ],
+   "foreground_changed": false
+  },
+  "q3_formula": {
+   "png": "shots/q3_formula.png",
+   "size": [
+    974,
+    358
+   ],
+   "cols_found": 5,
+   "rows_found": 11,
+   "need": [
+    5,
+    11
+   ],
+   "foreground_changed": false
+  },
+  "q1_start": {
+   "png": "shots/q1_start.png",
+   "size": [
+    579,
+    391
+   ],
+   "cols_found": 6,
+   "rows_found": 12,
+   "need": [
+    6,
+    12
+   ],
+   "foreground_changed": false
+  },
+  "q2_start": {
+   "png": "shots/q2_start.png",
+   "size": [
+    827,
+    391
+   ],
+   "cols_found": 8,
+   "rows_found": 12,
+   "need": [
+    8,
+    12
+   ],
+   "foreground_changed": false
+  },
+  "q3_start": {
+   "png": "shots/q3_start.png",
+   "size": [
+    449,
+    391
+   ],
+   "cols_found": 5,
+   "rows_found": 12,
+   "need": [
+    5,
+    12
+   ],
+   "foreground_changed": false
+  }
+ },
+ "excel": {
+  "version": "16.0",
+  "build": 20527.0
+ },
+ "file_props": {
+  "실습.xlsx": {
+   "dc:creator": "CODINGNOW",
+   "cp:lastModifiedBy": "CODINGNOW"
+  },
+  "정답.xlsx": {
+   "dc:creator": "CODINGNOW",
+   "cp:lastModifiedBy": "CODINGNOW"
+  }
+ }
+}
