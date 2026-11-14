@@ -2,7 +2,7 @@
 
 > ※ **대한상공회의소 문제가 아닌 연습용 자작 문제**입니다. 문제 문장 · 이름 · 부서 · 숫자는 모두 새로 만든 가상 자료입니다.
 
-- 강의: (준비 중) https://www.coding-now.com/blog/excel
+- 강의: https://www.coding-now.com/blog/excel/excel-intermediate-02-countif-sumif
 - 짝 강의: [중급 1강 — IF · AND · OR · 중첩 IF](../01_엑셀_IF함수/) (문제 번호는 1강에서 이어서 4~6)
 
 ## 파일
