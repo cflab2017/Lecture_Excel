@@ -36,6 +36,7 @@
 | 기초 | 8 | [엑셀 단축키 — 빈 칸에서 멈추는 Ctrl+방향키 · 자동 합계 Alt+= · F4 의 두 가지 뜻](01_기초/08_엑셀_단축키/) · [강의](https://www.coding-now.com/blog/excel/excel-basic-08-shortcuts) | Ctrl+↓ 빈 줄에서 멈춤 · Alt+= =SUM(E9:E13) · F4 $ 순서 · Ctrl+; 날짜 |
 | 중급 | 1 | [엑셀 IF 함수 — AND · OR · 중첩 IF (컴활 2급 실기 계산작업 유형 연습)](02_중급/01_엑셀_IF함수/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-01-if-function) | 자작 3문제 · 따옴표 빠지면 #NAME? · OR 빼먹으면 8칸 중 1칸만 틀림 · 중첩 IF 는 큰 기준부터 · 이상은 >= |
 | 중급 | 2 | [엑셀 COUNTIF · SUMIF · AVERAGEIF (컴활 2급 실기 계산작업 유형 연습)](02_중급/02_엑셀_COUNTIF_SUMIF/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-02-countif-sumif) | 자작 3문제 · & "명" · $ 없이 채우면 셋째 칸만 틀림 · ">="&E25 vs ">=E25" 0 · "*볼펜*" 165 vs "볼펜*" 82 |
+| 중급 | 3 | [엑셀 VLOOKUP · HLOOKUP (컴활 2급 실기 계산작업 유형 연습)](02_중급/03_엑셀_VLOOKUP_HLOOKUP/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-03-vlookup-hlookup) | 자작 3문제 · 열 번호는 표 범위 안에서 · $ 없이 채우면 #N/A · 구간은 TRUE(FALSE 면 #N/A 5칸) · 정렬 안 된 표에 넷째 인수 생략하면 5칸 틀림 |
 
 중급의 '컴활 2급 실기 유형 연습' 문제는 모두 **대한상공회의소 문제가 아닌 연습용 자작 문제**입니다.
 

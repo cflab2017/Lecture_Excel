@@ -1,0 +1,651 @@
+{
+ "run": "2026-11-16T10:50:43",
+ "notice": "※ 대한상공회의소 문제가 아닌 연습용 자작 문제입니다. 이름 · 코드 · 숫자는 모두 가상입니다.",
+ "problems": [
+  {
+   "n": 7,
+   "key": "q7",
+   "level": "기본",
+   "text": "[표7]에서 제품코드[A3:A10]를 이용하여 제품표[E3:G7]에서 단가를 찾아 단가[C3:C10]에 표시하시오.",
+   "use": "VLOOKUP 함수 사용",
+   "answers": [
+    {
+     "first_cell": "C3",
+     "first_cell_formula": "=VLOOKUP(A3,$E$3:$G$7,3,FALSE)",
+     "formulas": {
+      "C3": "=VLOOKUP(A3,$E$3:$G$7,3,FALSE)",
+      "C4": "=VLOOKUP(A4,$E$3:$G$7,3,FALSE)",
+      "C5": "=VLOOKUP(A5,$E$3:$G$7,3,FALSE)",
+      "C6": "=VLOOKUP(A6,$E$3:$G$7,3,FALSE)",
+      "C7": "=VLOOKUP(A7,$E$3:$G$7,3,FALSE)",
+      "C8": "=VLOOKUP(A8,$E$3:$G$7,3,FALSE)",
+      "C9": "=VLOOKUP(A9,$E$3:$G$7,3,FALSE)",
+      "C10": "=VLOOKUP(A10,$E$3:$G$7,3,FALSE)"
+     },
+     "values": {
+      "C3": "800",
+      "C4": "500",
+      "C5": "1,500",
+      "C6": "1,200",
+      "C7": "300",
+      "C8": "500",
+      "C9": "800",
+      "C10": "1,500"
+     },
+     "value2": {
+      "C3": 800.0,
+      "C4": 500.0,
+      "C5": 1500.0,
+      "C6": 1200.0,
+      "C7": 300.0,
+      "C8": 500.0,
+      "C9": 800.0,
+      "C10": 1500.0
+     },
+     "ok": true
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "key": "q8",
+   "level": "응용",
+   "text": "[표8]에서 구매 금액[B14:B21]에 따른 할인율을 할인율표[F13:I14]를 참조하여 할인율[C14:C21]에 표시하시오. 할인율표의 구매 금액은 그 금액 '이상'부터 적용된다.",
+   "use": "HLOOKUP 함수 사용",
+   "answers": [
+    {
+     "first_cell": "C14",
+     "first_cell_formula": "=HLOOKUP(B14,$F$13:$I$14,2,TRUE)",
+     "formulas": {
+      "C14": "=HLOOKUP(B14,$F$13:$I$14,2,TRUE)",
+      "C15": "=HLOOKUP(B15,$F$13:$I$14,2,TRUE)",
+      "C16": "=HLOOKUP(B16,$F$13:$I$14,2,TRUE)",
+      "C17": "=HLOOKUP(B17,$F$13:$I$14,2,TRUE)",
+      "C18": "=HLOOKUP(B18,$F$13:$I$14,2,TRUE)",
+      "C19": "=HLOOKUP(B19,$F$13:$I$14,2,TRUE)",
+      "C20": "=HLOOKUP(B20,$F$13:$I$14,2,TRUE)",
+      "C21": "=HLOOKUP(B21,$F$13:$I$14,2,TRUE)"
+     },
+     "values": {
+      "C14": "0%",
+      "C15": "5%",
+      "C16": "5%",
+      "C17": "10%",
+      "C18": "10%",
+      "C19": "15%",
+      "C20": "15%",
+      "C21": "0%"
+     },
+     "value2": {
+      "C14": 0.0,
+      "C15": 0.05,
+      "C16": 0.05,
+      "C17": 0.1,
+      "C18": 0.1,
+      "C19": 0.15,
+      "C20": 0.15,
+      "C21": 0.0
+     },
+     "ok": true
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "key": "q9",
+   "level": "함정",
+   "text": "[표9]에서 부서코드[A25:A32]를 이용하여 부서표[E25:F30]에서 부서명을 찾아 부서명[C25:C32]에 표시하시오.",
+   "use": "VLOOKUP 함수 사용 ▶ 부서표는 부서코드 순으로 정렬되어 있지 않음",
+   "answers": [
+    {
+     "first_cell": "C25",
+     "first_cell_formula": "=VLOOKUP(A25,$E$25:$F$30,2,FALSE)",
+     "formulas": {
+      "C25": "=VLOOKUP(A25,$E$25:$F$30,2,FALSE)",
+      "C26": "=VLOOKUP(A26,$E$25:$F$30,2,FALSE)",
+      "C27": "=VLOOKUP(A27,$E$25:$F$30,2,FALSE)",
+      "C28": "=VLOOKUP(A28,$E$25:$F$30,2,FALSE)",
+      "C29": "=VLOOKUP(A29,$E$25:$F$30,2,FALSE)",
+      "C30": "=VLOOKUP(A30,$E$25:$F$30,2,FALSE)",
+      "C31": "=VLOOKUP(A31,$E$25:$F$30,2,FALSE)",
+      "C32": "=VLOOKUP(A32,$E$25:$F$30,2,FALSE)"
+     },
+     "values": {
+      "C25": "영업팀",
+      "C26": "개발팀",
+      "C27": "총무팀",
+      "C28": "기획팀",
+      "C29": "회계팀",
+      "C30": "인사팀",
+      "C31": "영업팀",
+      "C32": "개발팀"
+     },
+     "value2": {
+      "C25": "영업팀",
+      "C26": "개발팀",
+      "C27": "총무팀",
+      "C28": "기획팀",
+      "C29": "회계팀",
+      "C30": "인사팀",
+      "C31": "영업팀",
+      "C32": "개발팀"
+     },
+     "ok": true
+    }
+   ]
+  }
+ ],
+ "traps": [
+  {
+   "key": "q7_col2",
+   "why": "열 번호를 2 로 → 제품표 둘째 열(제품명)이 나옴",
+   "formula": "=VLOOKUP(A3,$E$3:$G$7,2,FALSE)",
+   "range": "C3:C10",
+   "formulas": {
+    "C3": "=VLOOKUP(A3,$E$3:$G$7,2,FALSE)",
+    "C4": "=VLOOKUP(A4,$E$3:$G$7,2,FALSE)",
+    "C5": "=VLOOKUP(A5,$E$3:$G$7,2,FALSE)",
+    "C6": "=VLOOKUP(A6,$E$3:$G$7,2,FALSE)",
+    "C7": "=VLOOKUP(A7,$E$3:$G$7,2,FALSE)",
+    "C8": "=VLOOKUP(A8,$E$3:$G$7,2,FALSE)",
+    "C9": "=VLOOKUP(A9,$E$3:$G$7,2,FALSE)",
+    "C10": "=VLOOKUP(A10,$E$3:$G$7,2,FALSE)"
+   },
+   "values": {
+    "C3": "형광펜",
+    "C4": "볼펜",
+    "C5": "파일철",
+    "C6": "노트",
+    "C7": "지우개",
+    "C8": "볼펜",
+    "C9": "형광펜",
+    "C10": "파일철"
+   },
+   "wrong_vs_answer": 8,
+   "shot": {
+    "png": "shots/trap_q7_col2.png",
+    "size": [
+     933,
+     391
+    ],
+    "cols_found": 9,
+    "rows_found": 12,
+    "need": [
+     9,
+     12
+    ],
+    "foreground_changed": false
+   }
+  },
+  {
+   "key": "q7_relative",
+   "why": "표 범위에 $ 를 안 붙이고 채움 → 아래 칸일수록 표가 내려가 위쪽 코드를 못 찾음",
+   "formula": "=VLOOKUP(A3,E3:G7,3,FALSE)",
+   "range": "C3:C10",
+   "formulas": {
+    "C3": "=VLOOKUP(A3,E3:G7,3,FALSE)",
+    "C4": "=VLOOKUP(A4,E4:G8,3,FALSE)",
+    "C5": "=VLOOKUP(A5,E5:G9,3,FALSE)",
+    "C6": "=VLOOKUP(A6,E6:G10,3,FALSE)",
+    "C7": "=VLOOKUP(A7,E7:G11,3,FALSE)",
+    "C8": "=VLOOKUP(A8,E8:G12,3,FALSE)",
+    "C9": "=VLOOKUP(A9,E9:G13,3,FALSE)",
+    "C10": "=VLOOKUP(A10,E10:G14,3,FALSE)"
+   },
+   "values": {
+    "C3": "800",
+    "C4": "#N/A",
+    "C5": "1,500",
+    "C6": "#N/A",
+    "C7": "#N/A",
+    "C8": "#N/A",
+    "C9": "#N/A",
+    "C10": "#N/A"
+   },
+   "wrong_vs_answer": 6,
+   "shot": {
+    "png": "shots/trap_q7_relative.png",
+    "size": [
+     933,
+     391
+    ],
+    "cols_found": 9,
+    "rows_found": 12,
+    "need": [
+     9,
+     12
+    ],
+    "foreground_changed": true
+   }
+  },
+  {
+   "key": "q7_sheetcol",
+   "why": "열 번호를 시트 열 번호(G = 7)로 → 표 범위가 3열뿐이라 오류",
+   "formula": "=VLOOKUP(A3,$E$3:$G$7,7,FALSE)",
+   "range": "C3:C10",
+   "formulas": {
+    "C3": "=VLOOKUP(A3,$E$3:$G$7,7,FALSE)",
+    "C4": "=VLOOKUP(A4,$E$3:$G$7,7,FALSE)",
+    "C5": "=VLOOKUP(A5,$E$3:$G$7,7,FALSE)",
+    "C6": "=VLOOKUP(A6,$E$3:$G$7,7,FALSE)",
+    "C7": "=VLOOKUP(A7,$E$3:$G$7,7,FALSE)",
+    "C8": "=VLOOKUP(A8,$E$3:$G$7,7,FALSE)",
+    "C9": "=VLOOKUP(A9,$E$3:$G$7,7,FALSE)",
+    "C10": "=VLOOKUP(A10,$E$3:$G$7,7,FALSE)"
+   },
+   "values": {
+    "C3": "#REF!",
+    "C4": "#REF!",
+    "C5": "#REF!",
+    "C6": "#REF!",
+    "C7": "#REF!",
+    "C8": "#REF!",
+    "C9": "#REF!",
+    "C10": "#REF!"
+   },
+   "wrong_vs_answer": 8,
+   "shot": {
+    "png": "shots/trap_q7_sheetcol.png",
+    "size": [
+     933,
+     391
+    ],
+    "cols_found": 9,
+    "rows_found": 12,
+    "need": [
+     9,
+     12
+    ],
+    "foreground_changed": false
+   }
+  },
+  {
+   "key": "q8_false",
+   "why": "구간 찾기에 FALSE(정확히 일치) → 표에 딱 있는 금액(100,000 · 300,000 · 500,000)만 찾음",
+   "formula": "=HLOOKUP(B14,$F$13:$I$14,2,FALSE)",
+   "range": "C14:C21",
+   "formulas": {
+    "C14": "=HLOOKUP(B14,$F$13:$I$14,2,FALSE)",
+    "C15": "=HLOOKUP(B15,$F$13:$I$14,2,FALSE)",
+    "C16": "=HLOOKUP(B16,$F$13:$I$14,2,FALSE)",
+    "C17": "=HLOOKUP(B17,$F$13:$I$14,2,FALSE)",
+    "C18": "=HLOOKUP(B18,$F$13:$I$14,2,FALSE)",
+    "C19": "=HLOOKUP(B19,$F$13:$I$14,2,FALSE)",
+    "C20": "=HLOOKUP(B20,$F$13:$I$14,2,FALSE)",
+    "C21": "=HLOOKUP(B21,$F$13:$I$14,2,FALSE)"
+   },
+   "values": {
+    "C14": "#N/A",
+    "C15": "5%",
+    "C16": "#N/A",
+    "C17": "10%",
+    "C18": "#N/A",
+    "C19": "15%",
+    "C20": "#N/A",
+    "C21": "#N/A"
+   },
+   "wrong_vs_answer": 5,
+   "shot": {
+    "png": "shots/trap_q8_false.png",
+    "size": [
+     1146,
+     375
+    ],
+    "cols_found": 11,
+    "rows_found": 12,
+    "need": [
+     11,
+     12
+    ],
+    "foreground_changed": true
+   }
+  },
+  {
+   "key": "q8_omit",
+   "why": "넷째 인수 생략 → TRUE 와 같음(정답과 같은 결과)",
+   "formula": "=HLOOKUP(B14,$F$13:$I$14,2)",
+   "range": "C14:C21",
+   "formulas": {
+    "C14": "=HLOOKUP(B14,$F$13:$I$14,2)",
+    "C15": "=HLOOKUP(B15,$F$13:$I$14,2)",
+    "C16": "=HLOOKUP(B16,$F$13:$I$14,2)",
+    "C17": "=HLOOKUP(B17,$F$13:$I$14,2)",
+    "C18": "=HLOOKUP(B18,$F$13:$I$14,2)",
+    "C19": "=HLOOKUP(B19,$F$13:$I$14,2)",
+    "C20": "=HLOOKUP(B20,$F$13:$I$14,2)",
+    "C21": "=HLOOKUP(B21,$F$13:$I$14,2)"
+   },
+   "values": {
+    "C14": "0%",
+    "C15": "5%",
+    "C16": "5%",
+    "C17": "10%",
+    "C18": "10%",
+    "C19": "15%",
+    "C20": "15%",
+    "C21": "0%"
+   },
+   "wrong_vs_answer": 0,
+   "shot": {
+    "png": "shots/trap_q8_omit.png",
+    "size": [
+     1146,
+     375
+    ],
+    "cols_found": 11,
+    "rows_found": 12,
+    "need": [
+     11,
+     12
+    ],
+    "foreground_changed": true
+   }
+  },
+  {
+   "key": "q8_vlookup",
+   "why": "가로 표에 VLOOKUP → 첫 열(F13:F14)에서 세로로 찾음",
+   "formula": "=VLOOKUP(B14,$F$13:$I$14,2,TRUE)",
+   "range": "C14:C21",
+   "formulas": {
+    "C14": "=VLOOKUP(B14,$F$13:$I$14,2,TRUE)",
+    "C15": "=VLOOKUP(B15,$F$13:$I$14,2,TRUE)",
+    "C16": "=VLOOKUP(B16,$F$13:$I$14,2,TRUE)",
+    "C17": "=VLOOKUP(B17,$F$13:$I$14,2,TRUE)",
+    "C18": "=VLOOKUP(B18,$F$13:$I$14,2,TRUE)",
+    "C19": "=VLOOKUP(B19,$F$13:$I$14,2,TRUE)",
+    "C20": "=VLOOKUP(B20,$F$13:$I$14,2,TRUE)",
+    "C21": "=VLOOKUP(B21,$F$13:$I$14,2,TRUE)"
+   },
+   "values": {
+    "C14": "5%",
+    "C15": "5%",
+    "C16": "5%",
+    "C17": "5%",
+    "C18": "5%",
+    "C19": "5%",
+    "C20": "5%",
+    "C21": "5%"
+   },
+   "wrong_vs_answer": 6,
+   "shot": {
+    "png": "shots/trap_q8_vlookup.png",
+    "size": [
+     1146,
+     375
+    ],
+    "cols_found": 11,
+    "rows_found": 12,
+    "need": [
+     11,
+     12
+    ],
+    "foreground_changed": false
+   }
+  },
+  {
+   "key": "q9_omit",
+   "why": "넷째 인수(FALSE) 생략 → 근삿값 찾기라 정렬 안 된 부서표에서 엉뚱한 부서",
+   "formula": "=VLOOKUP(A25,$E$25:$F$30,2)",
+   "range": "C25:C32",
+   "formulas": {
+    "C25": "=VLOOKUP(A25,$E$25:$F$30,2)",
+    "C26": "=VLOOKUP(A26,$E$25:$F$30,2)",
+    "C27": "=VLOOKUP(A27,$E$25:$F$30,2)",
+    "C28": "=VLOOKUP(A28,$E$25:$F$30,2)",
+    "C29": "=VLOOKUP(A29,$E$25:$F$30,2)",
+    "C30": "=VLOOKUP(A30,$E$25:$F$30,2)",
+    "C31": "=VLOOKUP(A31,$E$25:$F$30,2)",
+    "C32": "=VLOOKUP(A32,$E$25:$F$30,2)"
+   },
+   "values": {
+    "C25": "#N/A",
+    "C26": "개발팀",
+    "C27": "#N/A",
+    "C28": "#N/A",
+    "C29": "총무팀",
+    "C30": "인사팀",
+    "C31": "#N/A",
+    "C32": "개발팀"
+   },
+   "wrong_vs_answer": 5,
+   "shot": {
+    "png": "shots/trap_q9_omit.png",
+    "size": [
+     803,
+     391
+    ],
+    "cols_found": 8,
+    "rows_found": 12,
+    "need": [
+     8,
+     12
+    ],
+    "foreground_changed": false
+   }
+  },
+  {
+   "key": "q9_true",
+   "why": "TRUE 를 적음(생략과 같음)",
+   "formula": "=VLOOKUP(A25,$E$25:$F$30,2,TRUE)",
+   "range": "C25:C32",
+   "formulas": {
+    "C25": "=VLOOKUP(A25,$E$25:$F$30,2,TRUE)",
+    "C26": "=VLOOKUP(A26,$E$25:$F$30,2,TRUE)",
+    "C27": "=VLOOKUP(A27,$E$25:$F$30,2,TRUE)",
+    "C28": "=VLOOKUP(A28,$E$25:$F$30,2,TRUE)",
+    "C29": "=VLOOKUP(A29,$E$25:$F$30,2,TRUE)",
+    "C30": "=VLOOKUP(A30,$E$25:$F$30,2,TRUE)",
+    "C31": "=VLOOKUP(A31,$E$25:$F$30,2,TRUE)",
+    "C32": "=VLOOKUP(A32,$E$25:$F$30,2,TRUE)"
+   },
+   "values": {
+    "C25": "#N/A",
+    "C26": "개발팀",
+    "C27": "#N/A",
+    "C28": "#N/A",
+    "C29": "총무팀",
+    "C30": "인사팀",
+    "C31": "#N/A",
+    "C32": "개발팀"
+   },
+   "wrong_vs_answer": 5,
+   "shot": {
+    "png": "shots/trap_q9_true.png",
+    "size": [
+     803,
+     391
+    ],
+    "cols_found": 8,
+    "rows_found": 12,
+    "need": [
+     8,
+     12
+    ],
+    "foreground_changed": false
+   }
+  },
+  {
+   "key": "q9_relative",
+   "why": "표 범위에 $ 없이 채움",
+   "formula": "=VLOOKUP(A25,E25:F30,2,FALSE)",
+   "range": "C25:C32",
+   "formulas": {
+    "C25": "=VLOOKUP(A25,E25:F30,2,FALSE)",
+    "C26": "=VLOOKUP(A26,E26:F31,2,FALSE)",
+    "C27": "=VLOOKUP(A27,E27:F32,2,FALSE)",
+    "C28": "=VLOOKUP(A28,E28:F33,2,FALSE)",
+    "C29": "=VLOOKUP(A29,E29:F34,2,FALSE)",
+    "C30": "=VLOOKUP(A30,E30:F35,2,FALSE)",
+    "C31": "=VLOOKUP(A31,E31:F36,2,FALSE)",
+    "C32": "=VLOOKUP(A32,E32:F37,2,FALSE)"
+   },
+   "values": {
+    "C25": "영업팀",
+    "C26": "개발팀",
+    "C27": "#N/A",
+    "C28": "기획팀",
+    "C29": "회계팀",
+    "C30": "#N/A",
+    "C31": "#N/A",
+    "C32": "#N/A"
+   },
+   "wrong_vs_answer": 4,
+   "shot": {
+    "png": "shots/trap_q9_relative.png",
+    "size": [
+     803,
+     391
+    ],
+    "cols_found": 8,
+    "rows_found": 12,
+    "need": [
+     8,
+     12
+    ],
+    "foreground_changed": false
+   }
+  }
+ ],
+ "shots": {
+  "q7_result": {
+   "png": "shots/q7_result.png",
+   "size": [
+    933,
+    391
+   ],
+   "cols_found": 9,
+   "rows_found": 12,
+   "need": [
+    9,
+    12
+   ],
+   "foreground_changed": false
+  },
+  "q7_formula": {
+   "png": "shots/q7_formula.png",
+   "size": [
+    1141,
+    305
+   ],
+   "cols_found": 9,
+   "rows_found": 11,
+   "need": [
+    9,
+    11
+   ],
+   "foreground_changed": false
+  },
+  "q8_result": {
+   "png": "shots/q8_result.png",
+   "size": [
+    1146,
+    375
+   ],
+   "cols_found": 11,
+   "rows_found": 12,
+   "need": [
+    11,
+    12
+   ],
+   "foreground_changed": false
+  },
+  "q8_formula": {
+   "png": "shots/q8_formula.png",
+   "size": [
+    1149,
+    253
+   ],
+   "cols_found": 11,
+   "rows_found": 11,
+   "need": [
+    11,
+    11
+   ],
+   "foreground_changed": false
+  },
+  "q9_result": {
+   "png": "shots/q9_result.png",
+   "size": [
+    803,
+    391
+   ],
+   "cols_found": 8,
+   "rows_found": 12,
+   "need": [
+    8,
+    12
+   ],
+   "foreground_changed": false
+  },
+  "q9_formula": {
+   "png": "shots/q9_formula.png",
+   "size": [
+    1152,
+    326
+   ],
+   "cols_found": 8,
+   "rows_found": 11,
+   "need": [
+    8,
+    11
+   ],
+   "foreground_changed": false
+  },
+  "q7_start": {
+   "png": "shots/q7_start.png",
+   "size": [
+    933,
+    391
+   ],
+   "cols_found": 9,
+   "rows_found": 12,
+   "need": [
+    9,
+    12
+   ],
+   "foreground_changed": false
+  },
+  "q8_start": {
+   "png": "shots/q8_start.png",
+   "size": [
+    1146,
+    375
+   ],
+   "cols_found": 11,
+   "rows_found": 12,
+   "need": [
+    11,
+    12
+   ],
+   "foreground_changed": true
+  },
+  "q9_start": {
+   "png": "shots/q9_start.png",
+   "size": [
+    803,
+    391
+   ],
+   "cols_found": 8,
+   "rows_found": 12,
+   "need": [
+    8,
+    12
+   ],
+   "foreground_changed": false
+  }
+ },
+ "excel": {
+  "version": "16.0",
+  "build": 20527.0
+ },
+ "file_props": {
+  "실습.xlsx": {
+   "dc:creator": "CODINGNOW",
+   "cp:lastModifiedBy": "CODINGNOW"
+  },
+  "정답.xlsx": {
+   "dc:creator": "CODINGNOW",
+   "cp:lastModifiedBy": "CODINGNOW"
+  }
+ }
+}
