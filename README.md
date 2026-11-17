@@ -37,6 +37,7 @@
 | 중급 | 1 | [엑셀 IF 함수 — AND · OR · 중첩 IF (컴활 2급 실기 계산작업 유형 연습)](02_중급/01_엑셀_IF함수/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-01-if-function) | 자작 3문제 · 따옴표 빠지면 #NAME? · OR 빼먹으면 8칸 중 1칸만 틀림 · 중첩 IF 는 큰 기준부터 · 이상은 >= |
 | 중급 | 2 | [엑셀 COUNTIF · SUMIF · AVERAGEIF (컴활 2급 실기 계산작업 유형 연습)](02_중급/02_엑셀_COUNTIF_SUMIF/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-02-countif-sumif) | 자작 3문제 · & "명" · $ 없이 채우면 셋째 칸만 틀림 · ">="&E25 vs ">=E25" 0 · "*볼펜*" 165 vs "볼펜*" 82 |
 | 중급 | 3 | [엑셀 VLOOKUP · HLOOKUP (컴활 2급 실기 계산작업 유형 연습)](02_중급/03_엑셀_VLOOKUP_HLOOKUP/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-03-vlookup-hlookup) | 자작 3문제 · 열 번호는 표 범위 안에서 · $ 없이 채우면 #N/A · 구간은 TRUE(FALSE 면 #N/A 5칸) · 정렬 안 된 표에 넷째 인수 생략하면 5칸 틀림 |
+| 중급 | 4 | [엑셀 반올림 ROUND · ROUNDUP · ROUNDDOWN · INT · MOD (컴활 2급 실기 계산작업 유형 연습)](02_중급/04_엑셀_반올림_ROUND_INT_MOD/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-04-round-int-mod) | 자작 3문제 · 자릿수 1 · 0 · -2 · 상자 수는 ROUNDUP(ROUND 면 4칸 틀림) · 표시 형식만 줄이면 ×3 이 259 · INT(-7.5) = -8 · MOD 인수 거꾸로 8칸 틀림 |
 
 중급의 '컴활 2급 실기 유형 연습' 문제는 모두 **대한상공회의소 문제가 아닌 연습용 자작 문제**입니다.
 
