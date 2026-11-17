@@ -39,6 +39,7 @@
 | 중급 | 2 | [엑셀 COUNTIF · SUMIF · AVERAGEIF (컴활 2급 실기 계산작업 유형 연습)](02_중급/02_엑셀_COUNTIF_SUMIF/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-02-countif-sumif) | 자작 3문제 · & "명" · $ 없이 채우면 셋째 칸만 틀림 · ">="&E25 vs ">=E25" 0 · "*볼펜*" 165 vs "볼펜*" 82 |
 | 중급 | 3 | [엑셀 VLOOKUP · HLOOKUP (컴활 2급 실기 계산작업 유형 연습)](02_중급/03_엑셀_VLOOKUP_HLOOKUP/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-03-vlookup-hlookup) | 자작 3문제 · 열 번호는 표 범위 안에서 · $ 없이 채우면 #N/A · 구간은 TRUE(FALSE 면 #N/A 5칸) · 정렬 안 된 표에 넷째 인수 생략하면 5칸 틀림 |
 | 중급 | 4 | [엑셀 반올림 ROUND · ROUNDUP · ROUNDDOWN · INT · MOD (컴활 2급 실기 계산작업 유형 연습)](02_중급/04_엑셀_반올림_ROUND_INT_MOD/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-04-round-int-mod) | 자작 3문제 · 자릿수 1 · 0 · -2 · 상자 수는 ROUNDUP(ROUND 면 4칸 틀림) · 표시 형식만 줄이면 ×3 이 259 · INT(-7.5) = -8 · MOD 인수 거꾸로 8칸 틀림 |
+| 중급 | 5 | [엑셀 날짜 함수 DATE · YEAR · MONTH · DAY · WEEKDAY (컴활 2급 실기 계산작업 유형 연습)](02_중급/05_엑셀_날짜함수_DATE_WEEKDAY/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-05-date-functions) | 자작 3문제 · 기준일 $ 없으면 7칸 음수 · WEEKDAY 유형 2(생략하면 하루씩 밀림) · DAY(빼기)는 32박 → 1 · 날짜 형식 칸이면 2015 → 1905-07-07 · DATE(2026,13,1) = 2027-01-01 |
 
 중급의 '컴활 2급 실기 유형 연습' 문제는 모두 **대한상공회의소 문제가 아닌 연습용 자작 문제**입니다.
 

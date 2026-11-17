@@ -1,0 +1,1063 @@
+{
+ "run": "2026-11-18T08:52:16",
+ "notice": "※ 대한상공회의소 문제가 아닌 연습용 자작 문제입니다. 이름 · 날짜 · 숫자는 모두 가상입니다.",
+ "problems": [
+  {
+   "n": 13,
+   "key": "q13",
+   "level": "기본",
+   "text": "[표13]에서 입사일[B3:B10]을 이용하여 입사 연도[C3:C10]와 입사 월[D3:D10]을 표시하고, 기준일[G3]의 연도에서 입사 연도를 빼서 근속 연수[E3:E10]를 구하시오.",
+   "use": "YEAR, MONTH 함수 사용",
+   "answers": [
+    {
+     "first_cell": "C3",
+     "first_cell_formula": "=YEAR(B3)",
+     "formulas": {
+      "C3": "=YEAR(B3)",
+      "C4": "=YEAR(B4)",
+      "C5": "=YEAR(B5)",
+      "C6": "=YEAR(B6)",
+      "C7": "=YEAR(B7)",
+      "C8": "=YEAR(B8)",
+      "C9": "=YEAR(B9)",
+      "C10": "=YEAR(B10)"
+     },
+     "values": {
+      "C3": "2015",
+      "C4": "2019",
+      "C5": "2021",
+      "C6": "2008",
+      "C7": "2024",
+      "C8": "2012",
+      "C9": "2026",
+      "C10": "2017"
+     },
+     "expect": [
+      "2015",
+      "2019",
+      "2021",
+      "2008",
+      "2024",
+      "2012",
+      "2026",
+      "2017"
+     ],
+     "value2": {
+      "C3": 2015.0,
+      "C4": 2019.0,
+      "C5": 2021.0,
+      "C6": 2008.0,
+      "C7": 2024.0,
+      "C8": 2012.0,
+      "C9": 2026.0,
+      "C10": 2017.0
+     },
+     "ok": true
+    },
+    {
+     "first_cell": "D3",
+     "first_cell_formula": "=MONTH(B3)",
+     "formulas": {
+      "D3": "=MONTH(B3)",
+      "D4": "=MONTH(B4)",
+      "D5": "=MONTH(B5)",
+      "D6": "=MONTH(B6)",
+      "D7": "=MONTH(B7)",
+      "D8": "=MONTH(B8)",
+      "D9": "=MONTH(B9)",
+      "D10": "=MONTH(B10)"
+     },
+     "values": {
+      "D3": "3",
+      "D4": "11",
+      "D5": "7",
+      "D6": "1",
+      "D7": "2",
+      "D8": "9",
+      "D9": "4",
+      "D10": "12"
+     },
+     "expect": [
+      "3",
+      "11",
+      "7",
+      "1",
+      "2",
+      "9",
+      "4",
+      "12"
+     ],
+     "value2": {
+      "D3": 3.0,
+      "D4": 11.0,
+      "D5": 7.0,
+      "D6": 1.0,
+      "D7": 2.0,
+      "D8": 9.0,
+      "D9": 4.0,
+      "D10": 12.0
+     },
+     "ok": true
+    },
+    {
+     "first_cell": "E3",
+     "first_cell_formula": "=YEAR($G$3)-YEAR(B3)",
+     "formulas": {
+      "E3": "=YEAR($G$3)-YEAR(B3)",
+      "E4": "=YEAR($G$3)-YEAR(B4)",
+      "E5": "=YEAR($G$3)-YEAR(B5)",
+      "E6": "=YEAR($G$3)-YEAR(B6)",
+      "E7": "=YEAR($G$3)-YEAR(B7)",
+      "E8": "=YEAR($G$3)-YEAR(B8)",
+      "E9": "=YEAR($G$3)-YEAR(B9)",
+      "E10": "=YEAR($G$3)-YEAR(B10)"
+     },
+     "values": {
+      "E3": "11",
+      "E4": "7",
+      "E5": "5",
+      "E6": "18",
+      "E7": "2",
+      "E8": "14",
+      "E9": "0",
+      "E10": "9"
+     },
+     "expect": [
+      "11",
+      "7",
+      "5",
+      "18",
+      "2",
+      "14",
+      "0",
+      "9"
+     ],
+     "value2": {
+      "E3": 11.0,
+      "E4": 7.0,
+      "E5": 5.0,
+      "E6": 18.0,
+      "E7": 2.0,
+      "E8": 14.0,
+      "E9": 0.0,
+      "E10": 9.0
+     },
+     "ok": true
+    }
+   ]
+  },
+  {
+   "n": 14,
+   "key": "q14",
+   "level": "응용",
+   "text": "[표14]에서 년[B14:B21] · 월[C14:C21] · 일[D14:D21]을 이용하여 날짜[E14:E21]를 구하고, 그 날짜의 요일을 '월'~'일'로 요일[F14:F21]에 표시하시오. (단, 요일은 월요일이 1 인 유형 사용)",
+   "use": "① DATE 함수 ② CHOOSE, WEEKDAY 함수 사용",
+   "answers": [
+    {
+     "first_cell": "E14",
+     "first_cell_formula": "=DATE(B14,C14,D14)",
+     "formulas": {
+      "E14": "=DATE(B14,C14,D14)",
+      "E15": "=DATE(B15,C15,D15)",
+      "E16": "=DATE(B16,C16,D16)",
+      "E17": "=DATE(B17,C17,D17)",
+      "E18": "=DATE(B18,C18,D18)",
+      "E19": "=DATE(B19,C19,D19)",
+      "E20": "=DATE(B20,C20,D20)",
+      "E21": "=DATE(B21,C21,D21)"
+     },
+     "values": {
+      "E14": "2026-03-07",
+      "E15": "2026-04-18",
+      "E16": "2026-05-23",
+      "E17": "2026-07-30",
+      "E18": "2026-10-09",
+      "E19": "2026-11-21",
+      "E20": "2026-12-26",
+      "E21": "2027-01-02"
+     },
+     "expect": [
+      "2026-03-07",
+      "2026-04-18",
+      "2026-05-23",
+      "2026-07-30",
+      "2026-10-09",
+      "2026-11-21",
+      "2026-12-26",
+      "2027-01-02"
+     ],
+     "value2": {
+      "E14": 46088.0,
+      "E15": 46130.0,
+      "E16": 46165.0,
+      "E17": 46233.0,
+      "E18": 46304.0,
+      "E19": 46347.0,
+      "E20": 46382.0,
+      "E21": 46389.0
+     },
+     "ok": true
+    },
+    {
+     "first_cell": "F14",
+     "first_cell_formula": "=CHOOSE(WEEKDAY(E14,2),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")",
+     "formulas": {
+      "F14": "=CHOOSE(WEEKDAY(E14,2),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")",
+      "F15": "=CHOOSE(WEEKDAY(E15,2),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")",
+      "F16": "=CHOOSE(WEEKDAY(E16,2),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")",
+      "F17": "=CHOOSE(WEEKDAY(E17,2),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")",
+      "F18": "=CHOOSE(WEEKDAY(E18,2),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")",
+      "F19": "=CHOOSE(WEEKDAY(E19,2),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")",
+      "F20": "=CHOOSE(WEEKDAY(E20,2),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")",
+      "F21": "=CHOOSE(WEEKDAY(E21,2),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")"
+     },
+     "values": {
+      "F14": "토",
+      "F15": "토",
+      "F16": "토",
+      "F17": "목",
+      "F18": "금",
+      "F19": "토",
+      "F20": "토",
+      "F21": "토"
+     },
+     "expect": [
+      "토",
+      "토",
+      "토",
+      "목",
+      "금",
+      "토",
+      "토",
+      "토"
+     ],
+     "value2": {
+      "F14": "토",
+      "F15": "토",
+      "F16": "토",
+      "F17": "목",
+      "F18": "금",
+      "F19": "토",
+      "F20": "토",
+      "F21": "토"
+     },
+     "ok": true
+    }
+   ]
+  },
+  {
+   "n": 15,
+   "key": "q15",
+   "level": "함정",
+   "text": "[표15]에서 체크아웃[C25:C32]에서 체크인[B25:B32]을 빼서 숙박 일수[D25:D32]를 숫자로 구하고, 체크인이 토요일 또는 일요일이면 '주말', 아니면 '평일'을 요금 구분[E25:E32]에 표시하시오.",
+   "use": "① 날짜 빼기(숫자로 표시) ② IF, WEEKDAY 함수 사용",
+   "answers": [
+    {
+     "first_cell": "D25",
+     "first_cell_formula": "=C25-B25",
+     "formulas": {
+      "D25": "=C25-B25",
+      "D26": "=C26-B26",
+      "D27": "=C27-B27",
+      "D28": "=C28-B28",
+      "D29": "=C29-B29",
+      "D30": "=C30-B30",
+      "D31": "=C31-B31",
+      "D32": "=C32-B32"
+     },
+     "values": {
+      "D25": "2",
+      "D26": "1",
+      "D27": "3",
+      "D28": "7",
+      "D29": "14",
+      "D30": "31",
+      "D31": "32",
+      "D32": "45"
+     },
+     "expect": [
+      "2",
+      "1",
+      "3",
+      "7",
+      "14",
+      "31",
+      "32",
+      "45"
+     ],
+     "value2": {
+      "D25": 2.0,
+      "D26": 1.0,
+      "D27": 3.0,
+      "D28": 7.0,
+      "D29": 14.0,
+      "D30": 31.0,
+      "D31": 32.0,
+      "D32": 45.0
+     },
+     "ok": true
+    },
+    {
+     "first_cell": "E25",
+     "first_cell_formula": "=IF(WEEKDAY(B25,2)>=6,\"주말\",\"평일\")",
+     "formulas": {
+      "E25": "=IF(WEEKDAY(B25,2)>=6,\"주말\",\"평일\")",
+      "E26": "=IF(WEEKDAY(B26,2)>=6,\"주말\",\"평일\")",
+      "E27": "=IF(WEEKDAY(B27,2)>=6,\"주말\",\"평일\")",
+      "E28": "=IF(WEEKDAY(B28,2)>=6,\"주말\",\"평일\")",
+      "E29": "=IF(WEEKDAY(B29,2)>=6,\"주말\",\"평일\")",
+      "E30": "=IF(WEEKDAY(B30,2)>=6,\"주말\",\"평일\")",
+      "E31": "=IF(WEEKDAY(B31,2)>=6,\"주말\",\"평일\")",
+      "E32": "=IF(WEEKDAY(B32,2)>=6,\"주말\",\"평일\")"
+     },
+     "values": {
+      "E25": "평일",
+      "E26": "평일",
+      "E27": "주말",
+      "E28": "평일",
+      "E29": "주말",
+      "E30": "평일",
+      "E31": "주말",
+      "E32": "평일"
+     },
+     "expect": [
+      "평일",
+      "평일",
+      "주말",
+      "평일",
+      "주말",
+      "평일",
+      "주말",
+      "평일"
+     ],
+     "value2": {
+      "E25": "평일",
+      "E26": "평일",
+      "E27": "주말",
+      "E28": "평일",
+      "E29": "주말",
+      "E30": "평일",
+      "E31": "주말",
+      "E32": "평일"
+     },
+     "ok": true
+    }
+   ]
+  }
+ ],
+ "traps": [
+  {
+   "key": "q13_no_dollar",
+   "why": "기준일에 $ 를 빼고 채움 → 아래 칸은 빈 칸(G4…)의 연도",
+   "formula": "=YEAR(G3)-YEAR(B3)",
+   "range": "E3:E10",
+   "auto_format": "G/표준",
+   "formulas": {
+    "E3": "=YEAR(G3)-YEAR(B3)",
+    "E4": "=YEAR(G4)-YEAR(B4)",
+    "E5": "=YEAR(G5)-YEAR(B5)",
+    "E6": "=YEAR(G6)-YEAR(B6)",
+    "E7": "=YEAR(G7)-YEAR(B7)",
+    "E8": "=YEAR(G8)-YEAR(B8)",
+    "E9": "=YEAR(G9)-YEAR(B9)",
+    "E10": "=YEAR(G10)-YEAR(B10)"
+   },
+   "values": {
+    "E3": "11",
+    "E4": "-119",
+    "E5": "-121",
+    "E6": "-108",
+    "E7": "-124",
+    "E8": "-112",
+    "E9": "-126",
+    "E10": "-117"
+   },
+   "wrong_vs_answer": 7,
+   "shot": {
+    "png": "shots/trap_q13_no_dollar.png",
+    "size": [
+     1080,
+     391
+    ],
+    "cols_found": 9,
+    "rows_found": 12,
+    "need": [
+     9,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q13_days",
+   "why": "YEAR 없이 날짜끼리 빼기 → 연수가 아니라 날짜 수",
+   "formula": "=$G$3-B3",
+   "range": "E3:E10",
+   "auto_format": "G/표준",
+   "formulas": {
+    "E3": "=$G$3-B3",
+    "E4": "=$G$3-B4",
+    "E5": "=$G$3-B5",
+    "E6": "=$G$3-B6",
+    "E7": "=$G$3-B7",
+    "E8": "=$G$3-B8",
+    "E9": "=$G$3-B9",
+    "E10": "=$G$3-B10"
+   },
+   "values": {
+    "E3": "4322",
+    "E4": "2600",
+    "E5": "2009",
+    "E6": "6926",
+    "E7": "1039",
+    "E8": "5232",
+    "E9": "274",
+    "E10": "3307"
+   },
+   "wrong_vs_answer": 8,
+   "shot": {
+    "png": "shots/trap_q13_days.png",
+    "size": [
+     1080,
+     391
+    ],
+    "cols_found": 9,
+    "rows_found": 12,
+    "need": [
+     9,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q13_date_format",
+   "why": "입사 연도 칸이 날짜 형식(입사일 열 서식을 복사해 옴)",
+   "formula": "=YEAR(B3)",
+   "range": "C3:C10",
+   "auto_format": "G/표준",
+   "fmt_applied": "yyyy-mm-dd",
+   "formulas": {
+    "C3": "=YEAR(B3)",
+    "C4": "=YEAR(B4)",
+    "C5": "=YEAR(B5)",
+    "C6": "=YEAR(B6)",
+    "C7": "=YEAR(B7)",
+    "C8": "=YEAR(B8)",
+    "C9": "=YEAR(B9)",
+    "C10": "=YEAR(B10)"
+   },
+   "values": {
+    "C3": "1905-07-07",
+    "C4": "1905-07-11",
+    "C5": "1905-07-13",
+    "C6": "1905-06-30",
+    "C7": "1905-07-16",
+    "C8": "1905-07-04",
+    "C9": "1905-07-18",
+    "C10": "1905-07-09"
+   },
+   "wrong_vs_answer": 8,
+   "shot": {
+    "png": "shots/trap_q13_date_format.png",
+    "size": [
+     1080,
+     391
+    ],
+    "cols_found": 9,
+    "rows_found": 12,
+    "need": [
+     9,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q14_weekday_type1",
+   "why": "WEEKDAY 유형을 빼서 일요일이 1 → 한 칸씩 밀림",
+   "formula": "=CHOOSE(WEEKDAY(E14),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")",
+   "range": "F14:F21",
+   "auto_format": "G/표준",
+   "formulas": {
+    "F14": "=CHOOSE(WEEKDAY(E14),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")",
+    "F15": "=CHOOSE(WEEKDAY(E15),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")",
+    "F16": "=CHOOSE(WEEKDAY(E16),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")",
+    "F17": "=CHOOSE(WEEKDAY(E17),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")",
+    "F18": "=CHOOSE(WEEKDAY(E18),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")",
+    "F19": "=CHOOSE(WEEKDAY(E19),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")",
+    "F20": "=CHOOSE(WEEKDAY(E20),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")",
+    "F21": "=CHOOSE(WEEKDAY(E21),\"월\",\"화\",\"수\",\"목\",\"금\",\"토\",\"일\")"
+   },
+   "values": {
+    "F14": "일",
+    "F15": "일",
+    "F16": "일",
+    "F17": "금",
+    "F18": "토",
+    "F19": "일",
+    "F20": "일",
+    "F21": "일"
+   },
+   "wrong_vs_answer": 8,
+   "shot": {
+    "png": "shots/trap_q14_weekday_type1.png",
+    "size": [
+     925,
+     391
+    ],
+    "cols_found": 8,
+    "rows_found": 12,
+    "need": [
+     8,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q14_weekday_only",
+   "why": "CHOOSE 없이 WEEKDAY 만 → 요일 이름 대신 숫자",
+   "formula": "=WEEKDAY(E14,2)",
+   "range": "F14:F21",
+   "auto_format": "G/표준",
+   "formulas": {
+    "F14": "=WEEKDAY(E14,2)",
+    "F15": "=WEEKDAY(E15,2)",
+    "F16": "=WEEKDAY(E16,2)",
+    "F17": "=WEEKDAY(E17,2)",
+    "F18": "=WEEKDAY(E18,2)",
+    "F19": "=WEEKDAY(E19,2)",
+    "F20": "=WEEKDAY(E20,2)",
+    "F21": "=WEEKDAY(E21,2)"
+   },
+   "values": {
+    "F14": "6",
+    "F15": "6",
+    "F16": "6",
+    "F17": "4",
+    "F18": "5",
+    "F19": "6",
+    "F20": "6",
+    "F21": "6"
+   },
+   "wrong_vs_answer": 8,
+   "shot": {
+    "png": "shots/trap_q14_weekday_only.png",
+    "size": [
+     925,
+     391
+    ],
+    "cols_found": 8,
+    "rows_found": 12,
+    "need": [
+     8,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q14_text_join",
+   "why": "DATE 대신 & 로 이어 붙임 → 날짜가 아니라 글자",
+   "formula": "=B14&\"-\"&C14&\"-\"&D14",
+   "range": "E14:E21",
+   "auto_format": "G/표준",
+   "formulas": {
+    "E14": "=B14&\"-\"&C14&\"-\"&D14",
+    "E15": "=B15&\"-\"&C15&\"-\"&D15",
+    "E16": "=B16&\"-\"&C16&\"-\"&D16",
+    "E17": "=B17&\"-\"&C17&\"-\"&D17",
+    "E18": "=B18&\"-\"&C18&\"-\"&D18",
+    "E19": "=B19&\"-\"&C19&\"-\"&D19",
+    "E20": "=B20&\"-\"&C20&\"-\"&D20",
+    "E21": "=B21&\"-\"&C21&\"-\"&D21"
+   },
+   "values": {
+    "E14": "2026-3-7",
+    "E15": "2026-4-18",
+    "E16": "2026-5-23",
+    "E17": "2026-7-30",
+    "E18": "2026-10-9",
+    "E19": "2026-11-21",
+    "E20": "2026-12-26",
+    "E21": "2027-1-2"
+   },
+   "wrong_vs_answer": 6,
+   "shot": {
+    "png": "shots/trap_q14_text_join.png",
+    "size": [
+     925,
+     391
+    ],
+    "cols_found": 8,
+    "rows_found": 12,
+    "need": [
+     8,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q15_day",
+   "why": "숙박 일수를 DAY(체크아웃-체크인)로 → 31일 넘으면 틀림",
+   "formula": "=DAY(C25-B25)",
+   "range": "D25:D32",
+   "auto_format": "G/표준",
+   "formulas": {
+    "D25": "=DAY(C25-B25)",
+    "D26": "=DAY(C26-B26)",
+    "D27": "=DAY(C27-B27)",
+    "D28": "=DAY(C28-B28)",
+    "D29": "=DAY(C29-B29)",
+    "D30": "=DAY(C30-B30)",
+    "D31": "=DAY(C31-B31)",
+    "D32": "=DAY(C32-B32)"
+   },
+   "values": {
+    "D25": "2",
+    "D26": "1",
+    "D27": "3",
+    "D28": "7",
+    "D29": "14",
+    "D30": "31",
+    "D31": "1",
+    "D32": "14"
+   },
+   "wrong_vs_answer": 2,
+   "shot": {
+    "png": "shots/trap_q15_day.png",
+    "size": [
+     807,
+     391
+    ],
+    "cols_found": 7,
+    "rows_found": 12,
+    "need": [
+     7,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q15_date_format",
+   "why": "숙박 일수 칸이 날짜 형식으로 남음",
+   "formula": "=C25-B25",
+   "range": "D25:D32",
+   "auto_format": "G/표준",
+   "fmt_applied": "yyyy-mm-dd",
+   "formulas": {
+    "D25": "=C25-B25",
+    "D26": "=C26-B26",
+    "D27": "=C27-B27",
+    "D28": "=C28-B28",
+    "D29": "=C29-B29",
+    "D30": "=C30-B30",
+    "D31": "=C31-B31",
+    "D32": "=C32-B32"
+   },
+   "values": {
+    "D25": "1900-01-02",
+    "D26": "1900-01-01",
+    "D27": "1900-01-03",
+    "D28": "1900-01-07",
+    "D29": "1900-01-14",
+    "D30": "1900-01-31",
+    "D31": "1900-02-01",
+    "D32": "1900-02-14"
+   },
+   "wrong_vs_answer": 8,
+   "shot": {
+    "png": "shots/trap_q15_date_format.png",
+    "size": [
+     807,
+     391
+    ],
+    "cols_found": 7,
+    "rows_found": 12,
+    "need": [
+     7,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q15_reverse",
+   "why": "빼는 순서를 거꾸로(체크인-체크아웃)",
+   "formula": "=B25-C25",
+   "range": "D25:D32",
+   "auto_format": "G/표준",
+   "formulas": {
+    "D25": "=B25-C25",
+    "D26": "=B26-C26",
+    "D27": "=B27-C27",
+    "D28": "=B28-C28",
+    "D29": "=B29-C29",
+    "D30": "=B30-C30",
+    "D31": "=B31-C31",
+    "D32": "=B32-C32"
+   },
+   "values": {
+    "D25": "-2",
+    "D26": "-1",
+    "D27": "-3",
+    "D28": "-7",
+    "D29": "-14",
+    "D30": "-31",
+    "D31": "-32",
+    "D32": "-45"
+   },
+   "wrong_vs_answer": 8,
+   "shot": {
+    "png": "shots/trap_q15_reverse.png",
+    "size": [
+     807,
+     391
+    ],
+    "cols_found": 7,
+    "rows_found": 12,
+    "need": [
+     7,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q15_weekday_type1",
+   "why": "WEEKDAY 유형을 빼서 >=6 → 금 · 토가 주말, 일요일은 평일",
+   "formula": "=IF(WEEKDAY(B25)>=6,\"주말\",\"평일\")",
+   "range": "E25:E32",
+   "auto_format": "G/표준",
+   "formulas": {
+    "E25": "=IF(WEEKDAY(B25)>=6,\"주말\",\"평일\")",
+    "E26": "=IF(WEEKDAY(B26)>=6,\"주말\",\"평일\")",
+    "E27": "=IF(WEEKDAY(B27)>=6,\"주말\",\"평일\")",
+    "E28": "=IF(WEEKDAY(B28)>=6,\"주말\",\"평일\")",
+    "E29": "=IF(WEEKDAY(B29)>=6,\"주말\",\"평일\")",
+    "E30": "=IF(WEEKDAY(B30)>=6,\"주말\",\"평일\")",
+    "E31": "=IF(WEEKDAY(B31)>=6,\"주말\",\"평일\")",
+    "E32": "=IF(WEEKDAY(B32)>=6,\"주말\",\"평일\")"
+   },
+   "values": {
+    "E25": "주말",
+    "E26": "평일",
+    "E27": "주말",
+    "E28": "평일",
+    "E29": "주말",
+    "E30": "평일",
+    "E31": "평일",
+    "E32": "평일"
+   },
+   "wrong_vs_answer": 2,
+   "shot": {
+    "png": "shots/trap_q15_weekday_type1.png",
+    "size": [
+     807,
+     391
+    ],
+    "cols_found": 7,
+    "rows_found": 12,
+    "need": [
+     7,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  }
+ ],
+ "shots": {
+  "q13_result": {
+   "png": "shots/q13_result.png",
+   "size": [
+    1080,
+    391
+   ],
+   "cols_found": 9,
+   "rows_found": 12,
+   "need": [
+    9,
+    12
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q13_formula": {
+   "png": "shots/q13_formula.png",
+   "size": [
+    1141,
+    236
+   ],
+   "cols_found": 9,
+   "rows_found": 11,
+   "need": [
+    9,
+    11
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q14_result": {
+   "png": "shots/q14_result.png",
+   "size": [
+    925,
+    391
+   ],
+   "cols_found": 8,
+   "rows_found": 12,
+   "need": [
+    8,
+    12
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q14_formula": {
+   "png": "shots/q14_formula.png",
+   "size": [
+    1142,
+    194
+   ],
+   "cols_found": 8,
+   "rows_found": 11,
+   "need": [
+    8,
+    11
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q15_result": {
+   "png": "shots/q15_result.png",
+   "size": [
+    807,
+    391
+   ],
+   "cols_found": 7,
+   "rows_found": 12,
+   "need": [
+    7,
+    12
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q15_formula": {
+   "png": "shots/q15_formula.png",
+   "size": [
+    1149,
+    256
+   ],
+   "cols_found": 7,
+   "rows_found": 11,
+   "need": [
+    7,
+    11
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q13_start": {
+   "png": "shots/q13_start.png",
+   "size": [
+    1080,
+    391
+   ],
+   "cols_found": 9,
+   "rows_found": 12,
+   "need": [
+    9,
+    12
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q14_start": {
+   "png": "shots/q14_start.png",
+   "size": [
+    925,
+    391
+   ],
+   "cols_found": 8,
+   "rows_found": 12,
+   "need": [
+    8,
+    12
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q15_start": {
+   "png": "shots/q15_start.png",
+   "size": [
+    807,
+    391
+   ],
+   "cols_found": 7,
+   "rows_found": 12,
+   "need": [
+    7,
+    12
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  }
+ },
+ "excel": {
+  "version": "16.0",
+  "build": 20527.0
+ },
+ "input_check": {
+  "실습.xlsx": {
+   "B3_value2": 42065.0,
+   "B3_text": "2015-03-02",
+   "G3_text": "2026-12-31",
+   "B25_text": "2026-12-04"
+  },
+  "정답.xlsx": {
+   "B3_value2": 42065.0,
+   "B3_text": "2015-03-02",
+   "G3_text": "2026-12-31",
+   "B25_text": "2026-12-04"
+  }
+ },
+ "auto_format_on_entry": {
+  "C3": "G/표준",
+  "D3": "G/표준",
+  "E3": "G/표준",
+  "E14": "yyyy-mm-dd",
+  "F14": "G/표준",
+  "D25": "G/표준",
+  "E25": "G/표준"
+ },
+ "facts": [
+  {
+   "formula": "=DATE(2026,13,1)",
+   "label": "13월 → 다음 해 1월",
+   "text": "2027-01-01",
+   "value": 46388.0,
+   "auto_format": "yyyy-mm-dd"
+  },
+  {
+   "formula": "=DATE(2026,2,30)",
+   "label": "2월 30일 → 3월로 넘어감",
+   "text": "2026-03-02",
+   "value": 46083.0,
+   "auto_format": "yyyy-mm-dd"
+  },
+  {
+   "formula": "=DATE(26,5,5)",
+   "label": "두 자리 연도 26",
+   "text": "1926-05-05",
+   "value": 9622.0,
+   "auto_format": "yyyy-mm-dd"
+  },
+  {
+   "formula": "=DATE(2026,3,0)",
+   "label": "0일 = 앞 달 마지막 날",
+   "text": "2026-02-28",
+   "value": 46081.0,
+   "auto_format": "yyyy-mm-dd"
+  },
+  {
+   "formula": "=DAY(DATE(2026,3,0))",
+   "label": "그 달이 며칠까지인지",
+   "text": "28",
+   "value": 28.0,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=WEEKDAY(DATE(2026,11,18))",
+   "label": "유형 생략(일=1)",
+   "text": "4",
+   "value": 4.0,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=WEEKDAY(DATE(2026,11,18),2)",
+   "label": "유형 2(월=1)",
+   "text": "3",
+   "value": 3.0,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=WEEKDAY(DATE(2026,11,18),3)",
+   "label": "유형 3(월=0)",
+   "text": "2",
+   "value": 2.0,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=YEAR(0)",
+   "label": "빈 칸 · 0 의 연도",
+   "text": "1900",
+   "value": 1900.0,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=MONTH(0)",
+   "label": "빈 칸 · 0 의 월",
+   "text": "1",
+   "value": 1.0,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=DAY(0)",
+   "label": "빈 칸 · 0 의 일",
+   "text": "0",
+   "value": 0.0,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=YEAR(\"2026-11-18\")",
+   "label": "글자 날짜도 읽음",
+   "text": "2026",
+   "value": 2026.0,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=\"2026-11-20\"-\"2026-11-18\"",
+   "label": "글자 날짜끼리 빼기",
+   "text": "2",
+   "value": 2.0,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=DATE(2026,11,18)+30",
+   "label": "날짜 + 30",
+   "text": "2026-12-18",
+   "value": 46374.0,
+   "auto_format": "yyyy-mm-dd"
+  },
+  {
+   "formula": "=DATE(2026,11,18)-DATE(2026,1,1)",
+   "label": "날짜 - 날짜",
+   "text": "321",
+   "value": 321.0,
+   "auto_format": "G/표준"
+  }
+ ],
+ "file_props": {
+  "실습.xlsx": {
+   "dc:creator": "CODINGNOW",
+   "cp:lastModifiedBy": "CODINGNOW"
+  },
+  "정답.xlsx": {
+   "dc:creator": "CODINGNOW",
+   "cp:lastModifiedBy": "CODINGNOW"
+  }
+ }
+}
