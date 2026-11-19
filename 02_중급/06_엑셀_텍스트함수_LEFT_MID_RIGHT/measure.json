@@ -1,0 +1,1111 @@
+{
+ "run": "2026-11-19T09:22:16",
+ "notice": "※ 대한상공회의소 문제가 아닌 연습용 자작 문제입니다. 이름 · 코드 · 전화번호(010-0000-…) · 금액은 모두 가상입니다.",
+ "problems": [
+  {
+   "n": 16,
+   "key": "q16",
+   "level": "기본",
+   "text": "[표16]에서 제품코드[A3:A10]의 앞 두 글자를 국가[C3:C10]에, 넷째 글자부터 네 글자를 연도[D3:D10]에, 마지막 세 글자를 등급[E3:E10]에 표시하시오.",
+   "use": "LEFT, MID, RIGHT 함수 사용",
+   "answers": [
+    {
+     "first_cell": "C3",
+     "first_cell_formula": "=LEFT(A3,2)",
+     "formulas": {
+      "C3": "=LEFT(A3,2)",
+      "C4": "=LEFT(A4,2)",
+      "C5": "=LEFT(A5,2)",
+      "C6": "=LEFT(A6,2)",
+      "C7": "=LEFT(A7,2)",
+      "C8": "=LEFT(A8,2)",
+      "C9": "=LEFT(A9,2)",
+      "C10": "=LEFT(A10,2)"
+     },
+     "values": {
+      "C3": "KR",
+      "C4": "JP",
+      "C5": "US",
+      "C6": "CN",
+      "C7": "KR",
+      "C8": "VN",
+      "C9": "DE",
+      "C10": "KR"
+     },
+     "expect": [
+      "KR",
+      "JP",
+      "US",
+      "CN",
+      "KR",
+      "VN",
+      "DE",
+      "KR"
+     ],
+     "value2": {
+      "C3": "KR",
+      "C4": "JP",
+      "C5": "US",
+      "C6": "CN",
+      "C7": "KR",
+      "C8": "VN",
+      "C9": "DE",
+      "C10": "KR"
+     },
+     "text_cells": 8,
+     "ok": true
+    },
+    {
+     "first_cell": "D3",
+     "first_cell_formula": "=MID(A3,4,4)",
+     "formulas": {
+      "D3": "=MID(A3,4,4)",
+      "D4": "=MID(A4,4,4)",
+      "D5": "=MID(A5,4,4)",
+      "D6": "=MID(A6,4,4)",
+      "D7": "=MID(A7,4,4)",
+      "D8": "=MID(A8,4,4)",
+      "D9": "=MID(A9,4,4)",
+      "D10": "=MID(A10,4,4)"
+     },
+     "values": {
+      "D3": "2024",
+      "D4": "2023",
+      "D5": "2025",
+      "D6": "2022",
+      "D7": "2025",
+      "D8": "2024",
+      "D9": "2021",
+      "D10": "2023"
+     },
+     "expect": [
+      "2024",
+      "2023",
+      "2025",
+      "2022",
+      "2025",
+      "2024",
+      "2021",
+      "2023"
+     ],
+     "value2": {
+      "D3": "2024",
+      "D4": "2023",
+      "D5": "2025",
+      "D6": "2022",
+      "D7": "2025",
+      "D8": "2024",
+      "D9": "2021",
+      "D10": "2023"
+     },
+     "text_cells": 8,
+     "ok": true
+    },
+    {
+     "first_cell": "E3",
+     "first_cell_formula": "=RIGHT(A3,3)",
+     "formulas": {
+      "E3": "=RIGHT(A3,3)",
+      "E4": "=RIGHT(A4,3)",
+      "E5": "=RIGHT(A5,3)",
+      "E6": "=RIGHT(A6,3)",
+      "E7": "=RIGHT(A7,3)",
+      "E8": "=RIGHT(A8,3)",
+      "E9": "=RIGHT(A9,3)",
+      "E10": "=RIGHT(A10,3)"
+     },
+     "values": {
+      "E3": "A17",
+      "E4": "B05",
+      "E5": "A02",
+      "E6": "C11",
+      "E7": "B08",
+      "E8": "A20",
+      "E9": "C03",
+      "E10": "A14"
+     },
+     "expect": [
+      "A17",
+      "B05",
+      "A02",
+      "C11",
+      "B08",
+      "A20",
+      "C03",
+      "A14"
+     ],
+     "value2": {
+      "E3": "A17",
+      "E4": "B05",
+      "E5": "A02",
+      "E6": "C11",
+      "E7": "B08",
+      "E8": "A20",
+      "E9": "C03",
+      "E10": "A14"
+     },
+     "text_cells": 8,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "n": 17,
+   "key": "q17",
+   "level": "응용",
+   "text": "[표17]에서 이름[A14:A21]의 첫 글자만 남기고 나머지 글자 수만큼 '*'로 바꾸어 가린 이름[C14:C21]에 표시하고, 전화번호[B14:B21]의 가운데 네 자리를 '****'로 바꾸어 가린 번호[D14:D21]에 표시하시오. (예: 가온솔 → 가**, 010-0000-0476 → 010-****-0476)",
+   "use": "① LEFT, REPT, LEN 함수와 & 연산자 ② LEFT, RIGHT 함수와 & 연산자 사용",
+   "answers": [
+    {
+     "first_cell": "C14",
+     "first_cell_formula": "=LEFT(A14,1)&REPT(\"*\",LEN(A14)-1)",
+     "formulas": {
+      "C14": "=LEFT(A14,1)&REPT(\"*\",LEN(A14)-1)",
+      "C15": "=LEFT(A15,1)&REPT(\"*\",LEN(A15)-1)",
+      "C16": "=LEFT(A16,1)&REPT(\"*\",LEN(A16)-1)",
+      "C17": "=LEFT(A17,1)&REPT(\"*\",LEN(A17)-1)",
+      "C18": "=LEFT(A18,1)&REPT(\"*\",LEN(A18)-1)",
+      "C19": "=LEFT(A19,1)&REPT(\"*\",LEN(A19)-1)",
+      "C20": "=LEFT(A20,1)&REPT(\"*\",LEN(A20)-1)",
+      "C21": "=LEFT(A21,1)&REPT(\"*\",LEN(A21)-1)"
+     },
+     "values": {
+      "C14": "한*",
+      "C15": "가**",
+      "C16": "남***",
+      "C17": "이*",
+      "C18": "다**",
+      "C19": "선**",
+      "C20": "미*",
+      "C21": "해**"
+     },
+     "expect": [
+      "한*",
+      "가**",
+      "남***",
+      "이*",
+      "다**",
+      "선**",
+      "미*",
+      "해**"
+     ],
+     "value2": {
+      "C14": "한*",
+      "C15": "가**",
+      "C16": "남***",
+      "C17": "이*",
+      "C18": "다**",
+      "C19": "선**",
+      "C20": "미*",
+      "C21": "해**"
+     },
+     "text_cells": 8,
+     "ok": true
+    },
+    {
+     "first_cell": "D14",
+     "first_cell_formula": "=LEFT(B14,4)&\"****\"&RIGHT(B14,5)",
+     "formulas": {
+      "D14": "=LEFT(B14,4)&\"****\"&RIGHT(B14,5)",
+      "D15": "=LEFT(B15,4)&\"****\"&RIGHT(B15,5)",
+      "D16": "=LEFT(B16,4)&\"****\"&RIGHT(B16,5)",
+      "D17": "=LEFT(B17,4)&\"****\"&RIGHT(B17,5)",
+      "D18": "=LEFT(B18,4)&\"****\"&RIGHT(B18,5)",
+      "D19": "=LEFT(B19,4)&\"****\"&RIGHT(B19,5)",
+      "D20": "=LEFT(B20,4)&\"****\"&RIGHT(B20,5)",
+      "D21": "=LEFT(B21,4)&\"****\"&RIGHT(B21,5)"
+     },
+     "values": {
+      "D14": "010-****-5830",
+      "D15": "010-****-0476",
+      "D16": "010-****-7215",
+      "D17": "010-****-1943",
+      "D18": "010-****-3361",
+      "D19": "010-****-8829",
+      "D20": "010-****-4407",
+      "D21": "010-****-2150"
+     },
+     "expect": [
+      "010-****-5830",
+      "010-****-0476",
+      "010-****-7215",
+      "010-****-1943",
+      "010-****-3361",
+      "010-****-8829",
+      "010-****-4407",
+      "010-****-2150"
+     ],
+     "value2": {
+      "D14": "010-****-5830",
+      "D15": "010-****-0476",
+      "D16": "010-****-7215",
+      "D17": "010-****-1943",
+      "D18": "010-****-3361",
+      "D19": "010-****-8829",
+      "D20": "010-****-4407",
+      "D21": "010-****-2150"
+     },
+     "text_cells": 8,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "n": 18,
+   "key": "q18",
+   "level": "함정",
+   "text": "[표18]에서 주문번호[A25:A32]의 다섯째 글자부터 두 글자를 숫자로 바꾸어 주문 월[D25:D32]에 표시하고(예: 09 → 9), 상품[B25:B32] · 공백 · 단가[C25:C32](천 단위 쉼표) · '원'을 이어 안내 문구[E25:E32]에 표시하시오. (예: 볼펜 1,500원)",
+   "use": "① MID, VALUE 함수 ② & 연산자와 TEXT 함수 사용",
+   "answers": [
+    {
+     "first_cell": "D25",
+     "first_cell_formula": "=VALUE(MID(A25,5,2))",
+     "formulas": {
+      "D25": "=VALUE(MID(A25,5,2))",
+      "D26": "=VALUE(MID(A26,5,2))",
+      "D27": "=VALUE(MID(A27,5,2))",
+      "D28": "=VALUE(MID(A28,5,2))",
+      "D29": "=VALUE(MID(A29,5,2))",
+      "D30": "=VALUE(MID(A30,5,2))",
+      "D31": "=VALUE(MID(A31,5,2))",
+      "D32": "=VALUE(MID(A32,5,2))"
+     },
+     "values": {
+      "D25": "9",
+      "D26": "9",
+      "D27": "10",
+      "D28": "10",
+      "D29": "11",
+      "D30": "11",
+      "D31": "12",
+      "D32": "12"
+     },
+     "expect": [
+      "9",
+      "9",
+      "10",
+      "10",
+      "11",
+      "11",
+      "12",
+      "12"
+     ],
+     "value2": {
+      "D25": 9.0,
+      "D26": 9.0,
+      "D27": 10.0,
+      "D28": 10.0,
+      "D29": 11.0,
+      "D30": 11.0,
+      "D31": 12.0,
+      "D32": 12.0
+     },
+     "text_cells": 0,
+     "ok": true
+    },
+    {
+     "first_cell": "E25",
+     "first_cell_formula": "=B25&\" \"&TEXT(C25,\"#,##0\")&\"원\"",
+     "formulas": {
+      "E25": "=B25&\" \"&TEXT(C25,\"#,##0\")&\"원\"",
+      "E26": "=B26&\" \"&TEXT(C26,\"#,##0\")&\"원\"",
+      "E27": "=B27&\" \"&TEXT(C27,\"#,##0\")&\"원\"",
+      "E28": "=B28&\" \"&TEXT(C28,\"#,##0\")&\"원\"",
+      "E29": "=B29&\" \"&TEXT(C29,\"#,##0\")&\"원\"",
+      "E30": "=B30&\" \"&TEXT(C30,\"#,##0\")&\"원\"",
+      "E31": "=B31&\" \"&TEXT(C31,\"#,##0\")&\"원\"",
+      "E32": "=B32&\" \"&TEXT(C32,\"#,##0\")&\"원\""
+     },
+     "values": {
+      "E25": "볼펜 1,500원",
+      "E26": "노트 3,200원",
+      "E27": "형광펜 1,200원",
+      "E28": "파일철 4,500원",
+      "E29": "가위 3,800원",
+      "E30": "스테이플러 12,500원",
+      "E31": "풀 900원",
+      "E32": "클립 1,000원"
+     },
+     "expect": [
+      "볼펜 1,500원",
+      "노트 3,200원",
+      "형광펜 1,200원",
+      "파일철 4,500원",
+      "가위 3,800원",
+      "스테이플러 12,500원",
+      "풀 900원",
+      "클립 1,000원"
+     ],
+     "value2": {
+      "E25": "볼펜 1,500원",
+      "E26": "노트 3,200원",
+      "E27": "형광펜 1,200원",
+      "E28": "파일철 4,500원",
+      "E29": "가위 3,800원",
+      "E30": "스테이플러 12,500원",
+      "E31": "풀 900원",
+      "E32": "클립 1,000원"
+     },
+     "text_cells": 8,
+     "ok": true
+    }
+   ]
+  }
+ ],
+ "traps": [
+  {
+   "key": "q16_left_default",
+   "why": "LEFT 의 글자 수를 빼면 한 글자만",
+   "formula": "=LEFT(A3)",
+   "range": "C3:C10",
+   "auto_format": "G/표준",
+   "formulas": {
+    "C3": "=LEFT(A3)",
+    "C4": "=LEFT(A4)",
+    "C5": "=LEFT(A5)",
+    "C6": "=LEFT(A6)",
+    "C7": "=LEFT(A7)",
+    "C8": "=LEFT(A8)",
+    "C9": "=LEFT(A9)",
+    "C10": "=LEFT(A10)"
+   },
+   "values": {
+    "C3": "K",
+    "C4": "J",
+    "C5": "U",
+    "C6": "C",
+    "C7": "K",
+    "C8": "V",
+    "C9": "D",
+    "C10": "K"
+   },
+   "wrong_vs_answer": 8,
+   "text_cells": 8,
+   "shot": {
+    "png": "shots/trap_q16_left_default.png",
+    "size": [
+     991,
+     391
+    ],
+    "cols_found": 7,
+    "rows_found": 12,
+    "need": [
+     7,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q16_mid_start",
+   "why": "MID 시작 위치를 3 으로 → 하이픈부터",
+   "formula": "=MID(A3,3,4)",
+   "range": "D3:D10",
+   "auto_format": "G/표준",
+   "formulas": {
+    "D3": "=MID(A3,3,4)",
+    "D4": "=MID(A4,3,4)",
+    "D5": "=MID(A5,3,4)",
+    "D6": "=MID(A6,3,4)",
+    "D7": "=MID(A7,3,4)",
+    "D8": "=MID(A8,3,4)",
+    "D9": "=MID(A9,3,4)",
+    "D10": "=MID(A10,3,4)"
+   },
+   "values": {
+    "D3": "-202",
+    "D4": "-202",
+    "D5": "-202",
+    "D6": "-202",
+    "D7": "-202",
+    "D8": "-202",
+    "D9": "-202",
+    "D10": "-202"
+   },
+   "wrong_vs_answer": 8,
+   "text_cells": 8,
+   "shot": {
+    "png": "shots/trap_q16_mid_start.png",
+    "size": [
+     991,
+     391
+    ],
+    "cols_found": 7,
+    "rows_found": 12,
+    "need": [
+     7,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q16_right_count",
+   "why": "RIGHT 글자 수를 2 로",
+   "formula": "=RIGHT(A3,2)",
+   "range": "E3:E10",
+   "auto_format": "G/표준",
+   "formulas": {
+    "E3": "=RIGHT(A3,2)",
+    "E4": "=RIGHT(A4,2)",
+    "E5": "=RIGHT(A5,2)",
+    "E6": "=RIGHT(A6,2)",
+    "E7": "=RIGHT(A7,2)",
+    "E8": "=RIGHT(A8,2)",
+    "E9": "=RIGHT(A9,2)",
+    "E10": "=RIGHT(A10,2)"
+   },
+   "values": {
+    "E3": "17",
+    "E4": "05",
+    "E5": "02",
+    "E6": "11",
+    "E7": "08",
+    "E8": "20",
+    "E9": "03",
+    "E10": "14"
+   },
+   "wrong_vs_answer": 8,
+   "text_cells": 8,
+   "shot": {
+    "png": "shots/trap_q16_right_count.png",
+    "size": [
+     991,
+     391
+    ],
+    "cols_found": 7,
+    "rows_found": 12,
+    "need": [
+     7,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q17_fixed_stars",
+   "why": "'*' 를 두 개로 고정 → 두 글자 · 네 글자 이름이 틀림",
+   "formula": "=LEFT(A14,1)&\"**\"",
+   "range": "C14:C21",
+   "auto_format": "G/표준",
+   "formulas": {
+    "C14": "=LEFT(A14,1)&\"**\"",
+    "C15": "=LEFT(A15,1)&\"**\"",
+    "C16": "=LEFT(A16,1)&\"**\"",
+    "C17": "=LEFT(A17,1)&\"**\"",
+    "C18": "=LEFT(A18,1)&\"**\"",
+    "C19": "=LEFT(A19,1)&\"**\"",
+    "C20": "=LEFT(A20,1)&\"**\"",
+    "C21": "=LEFT(A21,1)&\"**\""
+   },
+   "values": {
+    "C14": "한**",
+    "C15": "가**",
+    "C16": "남**",
+    "C17": "이**",
+    "C18": "다**",
+    "C19": "선**",
+    "C20": "미**",
+    "C21": "해**"
+   },
+   "wrong_vs_answer": 4,
+   "text_cells": 8,
+   "shot": {
+    "png": "shots/trap_q17_fixed_stars.png",
+    "size": [
+     738,
+     391
+    ],
+    "cols_found": 6,
+    "rows_found": 12,
+    "need": [
+     6,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q17_no_hyphen",
+   "why": "LEFT 3 · RIGHT 4 → 하이픈이 빠짐",
+   "formula": "=LEFT(B14,3)&\"****\"&RIGHT(B14,4)",
+   "range": "D14:D21",
+   "auto_format": "G/표준",
+   "formulas": {
+    "D14": "=LEFT(B14,3)&\"****\"&RIGHT(B14,4)",
+    "D15": "=LEFT(B15,3)&\"****\"&RIGHT(B15,4)",
+    "D16": "=LEFT(B16,3)&\"****\"&RIGHT(B16,4)",
+    "D17": "=LEFT(B17,3)&\"****\"&RIGHT(B17,4)",
+    "D18": "=LEFT(B18,3)&\"****\"&RIGHT(B18,4)",
+    "D19": "=LEFT(B19,3)&\"****\"&RIGHT(B19,4)",
+    "D20": "=LEFT(B20,3)&\"****\"&RIGHT(B20,4)",
+    "D21": "=LEFT(B21,3)&\"****\"&RIGHT(B21,4)"
+   },
+   "values": {
+    "D14": "010****5830",
+    "D15": "010****0476",
+    "D16": "010****7215",
+    "D17": "010****1943",
+    "D18": "010****3361",
+    "D19": "010****8829",
+    "D20": "010****4407",
+    "D21": "010****2150"
+   },
+   "wrong_vs_answer": 8,
+   "text_cells": 8,
+   "shot": {
+    "png": "shots/trap_q17_no_hyphen.png",
+    "size": [
+     738,
+     391
+    ],
+    "cols_found": 6,
+    "rows_found": 12,
+    "need": [
+     6,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q17_plus",
+   "why": "& 대신 + 로 이음",
+   "formula": "=LEFT(B14,4)+\"****\"+RIGHT(B14,5)",
+   "range": "D14:D21",
+   "auto_format": "G/표준",
+   "formulas": {
+    "D14": "=LEFT(B14,4)+\"****\"+RIGHT(B14,5)",
+    "D15": "=LEFT(B15,4)+\"****\"+RIGHT(B15,5)",
+    "D16": "=LEFT(B16,4)+\"****\"+RIGHT(B16,5)",
+    "D17": "=LEFT(B17,4)+\"****\"+RIGHT(B17,5)",
+    "D18": "=LEFT(B18,4)+\"****\"+RIGHT(B18,5)",
+    "D19": "=LEFT(B19,4)+\"****\"+RIGHT(B19,5)",
+    "D20": "=LEFT(B20,4)+\"****\"+RIGHT(B20,5)",
+    "D21": "=LEFT(B21,4)+\"****\"+RIGHT(B21,5)"
+   },
+   "values": {
+    "D14": "#VALUE!",
+    "D15": "#VALUE!",
+    "D16": "#VALUE!",
+    "D17": "#VALUE!",
+    "D18": "#VALUE!",
+    "D19": "#VALUE!",
+    "D20": "#VALUE!",
+    "D21": "#VALUE!"
+   },
+   "wrong_vs_answer": 8,
+   "text_cells": 0,
+   "shot": {
+    "png": "shots/trap_q17_plus.png",
+    "size": [
+     738,
+     391
+    ],
+    "cols_found": 6,
+    "rows_found": 12,
+    "need": [
+     6,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q18_no_value",
+   "why": "VALUE 없이 MID 만 → 숫자처럼 보이는 글자",
+   "formula": "=MID(A25,5,2)",
+   "range": "D25:D32",
+   "auto_format": "G/표준",
+   "formulas": {
+    "D25": "=MID(A25,5,2)",
+    "D26": "=MID(A26,5,2)",
+    "D27": "=MID(A27,5,2)",
+    "D28": "=MID(A28,5,2)",
+    "D29": "=MID(A29,5,2)",
+    "D30": "=MID(A30,5,2)",
+    "D31": "=MID(A31,5,2)",
+    "D32": "=MID(A32,5,2)"
+   },
+   "values": {
+    "D25": "09",
+    "D26": "09",
+    "D27": "10",
+    "D28": "10",
+    "D29": "11",
+    "D30": "11",
+    "D31": "12",
+    "D32": "12"
+   },
+   "wrong_vs_answer": 2,
+   "text_cells": 8,
+   "sum": {
+    "cell": "G25",
+    "formula": "=SUM(D25:D32)",
+    "text": "0"
+   },
+   "shot": {
+    "png": "shots/trap_q18_no_value.png",
+    "size": [
+     991,
+     391
+    ],
+    "cols_found": 7,
+    "rows_found": 12,
+    "need": [
+     7,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q18_value_ok_sum",
+   "why": "(비교용) 정답 식의 합계",
+   "formula": "=VALUE(MID(A25,5,2))",
+   "range": "D25:D32",
+   "auto_format": "G/표준",
+   "formulas": {
+    "D25": "=VALUE(MID(A25,5,2))",
+    "D26": "=VALUE(MID(A26,5,2))",
+    "D27": "=VALUE(MID(A27,5,2))",
+    "D28": "=VALUE(MID(A28,5,2))",
+    "D29": "=VALUE(MID(A29,5,2))",
+    "D30": "=VALUE(MID(A30,5,2))",
+    "D31": "=VALUE(MID(A31,5,2))",
+    "D32": "=VALUE(MID(A32,5,2))"
+   },
+   "values": {
+    "D25": "9",
+    "D26": "9",
+    "D27": "10",
+    "D28": "10",
+    "D29": "11",
+    "D30": "11",
+    "D31": "12",
+    "D32": "12"
+   },
+   "wrong_vs_answer": 0,
+   "text_cells": 0,
+   "sum": {
+    "cell": "G25",
+    "formula": "=SUM(D25:D32)",
+    "text": "84"
+   },
+   "shot": {
+    "png": "shots/trap_q18_value_ok_sum.png",
+    "size": [
+     991,
+     391
+    ],
+    "cols_found": 7,
+    "rows_found": 12,
+    "need": [
+     7,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q18_no_text",
+   "why": "TEXT 없이 단가를 그대로 이음 → 쉼표가 사라짐",
+   "formula": "=B25&\" \"&C25&\"원\"",
+   "range": "E25:E32",
+   "auto_format": "G/표준",
+   "formulas": {
+    "E25": "=B25&\" \"&C25&\"원\"",
+    "E26": "=B26&\" \"&C26&\"원\"",
+    "E27": "=B27&\" \"&C27&\"원\"",
+    "E28": "=B28&\" \"&C28&\"원\"",
+    "E29": "=B29&\" \"&C29&\"원\"",
+    "E30": "=B30&\" \"&C30&\"원\"",
+    "E31": "=B31&\" \"&C31&\"원\"",
+    "E32": "=B32&\" \"&C32&\"원\""
+   },
+   "values": {
+    "E25": "볼펜 1500원",
+    "E26": "노트 3200원",
+    "E27": "형광펜 1200원",
+    "E28": "파일철 4500원",
+    "E29": "가위 3800원",
+    "E30": "스테이플러 12500원",
+    "E31": "풀 900원",
+    "E32": "클립 1000원"
+   },
+   "wrong_vs_answer": 7,
+   "text_cells": 8,
+   "shot": {
+    "png": "shots/trap_q18_no_text.png",
+    "size": [
+     991,
+     391
+    ],
+    "cols_found": 7,
+    "rows_found": 12,
+    "need": [
+     7,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q18_no_space",
+   "why": "공백(\" \")을 빠뜨림",
+   "formula": "=B25&TEXT(C25,\"#,##0\")&\"원\"",
+   "range": "E25:E32",
+   "auto_format": "G/표준",
+   "formulas": {
+    "E25": "=B25&TEXT(C25,\"#,##0\")&\"원\"",
+    "E26": "=B26&TEXT(C26,\"#,##0\")&\"원\"",
+    "E27": "=B27&TEXT(C27,\"#,##0\")&\"원\"",
+    "E28": "=B28&TEXT(C28,\"#,##0\")&\"원\"",
+    "E29": "=B29&TEXT(C29,\"#,##0\")&\"원\"",
+    "E30": "=B30&TEXT(C30,\"#,##0\")&\"원\"",
+    "E31": "=B31&TEXT(C31,\"#,##0\")&\"원\"",
+    "E32": "=B32&TEXT(C32,\"#,##0\")&\"원\""
+   },
+   "values": {
+    "E25": "볼펜1,500원",
+    "E26": "노트3,200원",
+    "E27": "형광펜1,200원",
+    "E28": "파일철4,500원",
+    "E29": "가위3,800원",
+    "E30": "스테이플러12,500원",
+    "E31": "풀900원",
+    "E32": "클립1,000원"
+   },
+   "wrong_vs_answer": 8,
+   "text_cells": 8,
+   "shot": {
+    "png": "shots/trap_q18_no_space.png",
+    "size": [
+     991,
+     391
+    ],
+    "cols_found": 7,
+    "rows_found": 12,
+    "need": [
+     7,
+     12
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  }
+ ],
+ "shots": {
+  "q16_result": {
+   "png": "shots/q16_result.png",
+   "size": [
+    991,
+    391
+   ],
+   "cols_found": 7,
+   "rows_found": 12,
+   "need": [
+    7,
+    12
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q16_formula": {
+   "png": "shots/q16_formula.png",
+   "size": [
+    1149,
+    298
+   ],
+   "cols_found": 7,
+   "rows_found": 11,
+   "need": [
+    7,
+    11
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q17_result": {
+   "png": "shots/q17_result.png",
+   "size": [
+    738,
+    391
+   ],
+   "cols_found": 6,
+   "rows_found": 12,
+   "need": [
+    6,
+    12
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q17_formula": {
+   "png": "shots/q17_formula.png",
+   "size": [
+    1142,
+    212
+   ],
+   "cols_found": 6,
+   "rows_found": 11,
+   "need": [
+    6,
+    11
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q18_result": {
+   "png": "shots/q18_result.png",
+   "size": [
+    991,
+    391
+   ],
+   "cols_found": 7,
+   "rows_found": 12,
+   "need": [
+    7,
+    12
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q18_formula": {
+   "png": "shots/q18_formula.png",
+   "size": [
+    1153,
+    229
+   ],
+   "cols_found": 7,
+   "rows_found": 11,
+   "need": [
+    7,
+    11
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q16_start": {
+   "png": "shots/q16_start.png",
+   "size": [
+    991,
+    391
+   ],
+   "cols_found": 7,
+   "rows_found": 12,
+   "need": [
+    7,
+    12
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q17_start": {
+   "png": "shots/q17_start.png",
+   "size": [
+    738,
+    391
+   ],
+   "cols_found": 6,
+   "rows_found": 12,
+   "need": [
+    6,
+    12
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q18_start": {
+   "png": "shots/q18_start.png",
+   "size": [
+    991,
+    391
+   ],
+   "cols_found": 7,
+   "rows_found": 12,
+   "need": [
+    7,
+    12
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  }
+ },
+ "excel": {
+  "version": "16.0",
+  "build": 20527.0
+ },
+ "input_check": {
+  "실습.xlsx": {
+   "A3": "KR-2024-A17",
+   "B14": "010-0000-5830",
+   "C25_text": "1,500",
+   "C25_value2": 1500.0
+  },
+  "정답.xlsx": {
+   "A3": "KR-2024-A17",
+   "B14": "010-0000-5830",
+   "C25_text": "1,500",
+   "C25_value2": 1500.0
+  }
+ },
+ "auto_format_on_entry": {
+  "C3": "G/표준",
+  "D3": "G/표준",
+  "E3": "G/표준",
+  "C14": "G/표준",
+  "D14": "G/표준",
+  "D25": "G/표준",
+  "E25": "G/표준"
+ },
+ "facts": [
+  {
+   "formula": "=LEN(\"KR-2024-A17\")",
+   "label": "하이픈까지 센 글자 수",
+   "text": "11",
+   "value": 11.0,
+   "is_text": false,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=LEN(\"가온솔\")",
+   "label": "한글 한 글자 = 1",
+   "text": "3",
+   "value": 3.0,
+   "is_text": false,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=LEN(\" 가온솔\")",
+   "label": "앞 공백도 한 글자",
+   "text": "4",
+   "value": 4.0,
+   "is_text": false,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=LEFT(\"가온솔\")",
+   "label": "글자 수를 빼면 1",
+   "text": "가",
+   "value": "가",
+   "is_text": true,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=MID(\"KR-2024-A17\",4,100)",
+   "label": "글자 수가 넘치면 끝까지",
+   "text": "2024-A17",
+   "value": "2024-A17",
+   "is_text": true,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=RIGHT(\"KR\",5)",
+   "label": "글자보다 많이 달라고 하면",
+   "text": "KR",
+   "value": "KR",
+   "is_text": true,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=MID(\"KR-2024-A17\",0,2)",
+   "label": "시작 위치 0",
+   "text": "#VALUE!",
+   "value": -2146826273,
+   "is_text": false,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=ISTEXT(MID(\"KR-2024-A17\",4,4))",
+   "label": "MID 결과는 글자인가",
+   "text": "TRUE",
+   "value": true,
+   "is_text": false,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=MID(\"KR-2024-A17\",4,4)+1",
+   "label": "글자 숫자에 + 1",
+   "text": "2025",
+   "value": 2025.0,
+   "is_text": false,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=VALUE(\"09\")",
+   "label": "VALUE 는 앞 0 을 떼고 숫자로",
+   "text": "9",
+   "value": 9.0,
+   "is_text": false,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=TRIM(\"  가온   솔 \")",
+   "label": "TRIM 은 앞뒤 공백을 지우고 가운데는 하나로",
+   "text": "가온 솔",
+   "value": "가온 솔",
+   "is_text": true,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=12500&\"원\"",
+   "label": "숫자를 & 로 이으면 쉼표 없음",
+   "text": "12500원",
+   "value": "12500원",
+   "is_text": true,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=TEXT(12500,\"#,##0\")&\"원\"",
+   "label": "TEXT 로 쉼표",
+   "text": "12,500원",
+   "value": "12,500원",
+   "is_text": true,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=DATE(2026,11,19)&\"\"",
+   "label": "날짜를 & 로 이으면",
+   "text": "46345",
+   "value": "46345",
+   "is_text": true,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=TEXT(DATE(2026,11,19),\"yyyy-mm-dd\")&\"까지\"",
+   "label": "TEXT 로 날짜 모양",
+   "text": "2026-11-19까지",
+   "value": "2026-11-19까지",
+   "is_text": true,
+   "auto_format": "G/표준"
+  },
+  {
+   "formula": "=REPT(\"*\",3)",
+   "label": "REPT 는 같은 글자를 반복",
+   "text": "***",
+   "value": "***",
+   "is_text": true,
+   "auto_format": "G/표준"
+  }
+ ],
+ "file_props": {
+  "실습.xlsx": {
+   "dc:creator": "CODINGNOW",
+   "cp:lastModifiedBy": "CODINGNOW"
+  },
+  "정답.xlsx": {
+   "dc:creator": "CODINGNOW",
+   "cp:lastModifiedBy": "CODINGNOW"
+  }
+ }
+}
