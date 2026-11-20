@@ -4,7 +4,7 @@ import os
 from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DST = r"D:\WebSite\WebSite\Website_Codingnow\public\lectures\excel"
+DST = r"F:\_GIT_Projects\05_content\content_hub\homepage\public\lectures\excel"
 S = lambda n: Image.open(os.path.join(HERE, "shots", n))
 BOX = (8, 188, 1192, 545)   # 수식 입력줄 + 1~14행
 out = {

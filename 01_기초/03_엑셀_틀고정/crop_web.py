@@ -3,7 +3,7 @@ import os
 from PIL import Image
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DST = r"D:\WebSite\WebSite\Website_Codingnow\public\lectures\excel"
+DST = r"F:\_GIT_Projects\05_content\content_hub\homepage\public\lectures\excel"
 S = lambda n: Image.open(os.path.join(HERE, "shots", n))
 out = {
     "basic-03-c2.png": S("s1_c2_scrolled.png").crop((8, 188, 1192, 640)),        # 수식 입력줄 + 1행·A:B 가 남은 40행 화면

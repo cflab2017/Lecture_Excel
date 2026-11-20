@@ -4,7 +4,7 @@ import os
 from PIL import Image, ImageDraw
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-DST = r"D:\WebSite\WebSite\Website_Codingnow\public\lectures\excel"
+DST = r"F:\_GIT_Projects\05_content\content_hub\homepage\public\lectures\excel"
 TOP = 44  # 제목 표시줄 높이
 
 
