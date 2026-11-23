@@ -42,6 +42,7 @@
 | 중급 | 5 | [엑셀 날짜 함수 DATE · YEAR · MONTH · DAY · WEEKDAY (컴활 2급 실기 계산작업 유형 연습)](02_중급/05_엑셀_날짜함수_DATE_WEEKDAY/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-05-date-functions) | 자작 3문제 · 기준일 $ 없으면 7칸 음수 · WEEKDAY 유형 2(생략하면 하루씩 밀림) · DAY(빼기)는 32박 → 1 · 날짜 형식 칸이면 2015 → 1905-07-07 · DATE(2026,13,1) = 2027-01-01 |
 | 중급 | 6 | [엑셀 텍스트 함수 LEFT · MID · RIGHT · LEN · & (컴활 2급 실기 계산작업 유형 연습)](02_중급/06_엑셀_텍스트함수_LEFT_MID_RIGHT/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-06-text-functions) | 자작 3문제 · MID 시작 위치는 하이픈도 셈 · 이름 가리기 REPT("*",LEN-1)('**' 고정이면 4칸 틀림) · & 대신 + 는 #VALUE! · MID 로 꺼낸 '09' 는 글자라 SUM 0(VALUE 면 84) · & 는 쉼표 모양을 버림 → TEXT |
 | 중급 | 7 | [엑셀 데이터베이스 함수 DSUM · DAVERAGE · DCOUNT · DMAX · DMIN (컴활 2급 실기 계산작업 유형 연습)](02_중급/07_엑셀_데이터베이스함수_DSUM_DAVERAGE/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-07-database-functions) | 자작 3문제 · 표 · 조건 범위 모두 머리글부터(빼면 0 · #VALUE!) · 같은 줄 그리고(48.5) · 다른 줄 또는(48.1) · 조건 범위 빈 줄은 전부 맞음(60) · '문구'는 문구류까지(10) → ="=문구"(15) |
+| 중급 | 8 | [엑셀 사용자 지정 표시 형식 (컴활 2급 실기 기본작업 유형 연습)](02_중급/08_엑셀_사용자지정_표시형식/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-08-custom-number-format) | 자작 3문제 · 0"세" · #,##0"원" 은 값 그대로(평균 36.6) · '34세' 직접 입력은 글자(평균 #DIV/0!) · 요일 aaa(ddd 는 Fri) · 끝 쉼표 = 천 단위 · 양수;음수;0 — 0 구역 빠지면 0, 순서 바뀌면 양수가 빨강 · 글자는 @ · 한국어 엑셀은 [빨강]([Red] · [빨간색] 거부) |
 
 중급의 '컴활 2급 실기 유형 연습' 문제는 모두 **대한상공회의소 문제가 아닌 연습용 자작 문제**입니다.
 
