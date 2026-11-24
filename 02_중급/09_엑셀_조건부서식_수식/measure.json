@@ -1,0 +1,718 @@
+{
+ "run": "2026-11-24T08:53:33",
+ "notice": "※ 대한상공회의소 문제가 아닌 연습용 자작 문제입니다. 이름 · 숫자는 모두 가상입니다.",
+ "avg27": 1091.875,
+ "problems": [
+  {
+   "n": 25,
+   "key": "q25",
+   "text": "[표25]의 [A3:D10] 영역에서 결석이 3 이상인 행 전체에 글꼴 스타일 '굵게', 글꼴 색 '표준 색-빨강'을 적용하시오. (규칙 유형은 '수식을 사용하여 서식을 지정할 셀 결정', 한 개의 규칙으로)",
+   "formula": "=$D3>=3",
+   "rows_full": [
+    4,
+    6,
+    8,
+    9
+   ],
+   "rows_part": [],
+   "expect": [
+    4,
+    6,
+    8,
+    9
+   ],
+   "ok": true,
+   "side": {}
+  },
+  {
+   "n": 26,
+   "key": "q26",
+   "text": "[표26]의 [A14:C21] 영역에서 분류가 '음료'이면서 재고가 10 미만인 행 전체에 채우기 색 '표준 색-노랑'을 적용하시오. (규칙 유형은 '수식을 사용하여 서식을 지정할 셀 결정', AND 함수 사용)",
+   "formula": "=AND($B14=\"음료\",$C14<10)",
+   "rows_full": [
+    14,
+    17,
+    20
+   ],
+   "rows_part": [],
+   "expect": [
+    14,
+    17,
+    20
+   ],
+   "ok": true,
+   "side": {}
+  },
+  {
+   "n": 27,
+   "key": "q27",
+   "text": "[표27]의 [A25:C32] 영역에서 실적이 실적 전체의 평균 이상인 행 전체에 글꼴 스타일 '굵게', 글꼴 색 '표준 색-파랑'을 적용하시오. (규칙 유형은 '수식을 사용하여 서식을 지정할 셀 결정', AVERAGE 함수 사용)",
+   "formula": "=$C25>=AVERAGE($C$25:$C$32)",
+   "rows_full": [
+    26,
+    28,
+    30,
+    32
+   ],
+   "rows_part": [],
+   "expect": [
+    26,
+    28,
+    30,
+    32
+   ],
+   "ok": true,
+   "side": {
+    "E25": "1,091.9"
+   }
+  }
+ ],
+ "traps": [
+  {
+   "key": "q25_no_dollar",
+   "why": "$ 없이 =D3>=3 — 열도 따라 움직여 A열만 칠해짐(B는 E, C는 F 를 봄)",
+   "range": "A3:D10",
+   "first": "A3",
+   "formula": "=D3>=3",
+   "kind": "expr",
+   "rule": {
+    "formula1_read": "=D3>=3",
+    "applies_to": "A3:D10",
+    "active": "A3"
+   },
+   "rows_full": [],
+   "rows_part": [
+    4,
+    6,
+    8,
+    9
+   ],
+   "cells_hit": [
+    "A4",
+    "A6",
+    "A8",
+    "A9"
+   ],
+   "wrong_rows": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "shot": {
+    "png": "shots/trap_q25_no_dollar.png",
+    "size": [
+     567,
+     391
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q25_both_dollar",
+   "why": "$D$3 — 모든 칸이 3행만 봄(D3=1 이라 아무 행도 안 칠해짐)",
+   "range": "A3:D10",
+   "first": "A3",
+   "formula": "=$D$3>=3",
+   "kind": "expr",
+   "rule": {
+    "formula1_read": "=$D$3>=3",
+    "applies_to": "A3:D10",
+    "active": "A3"
+   },
+   "rows_full": [],
+   "rows_part": [],
+   "cells_hit": [],
+   "wrong_rows": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "shot": {
+    "png": "shots/trap_q25_both_dollar.png",
+    "size": [
+     567,
+     391
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q25_only_d",
+   "why": "범위를 D3:D10 만 고름 — 결석 칸만 칠해짐",
+   "range": "D3:D10",
+   "first": "D3",
+   "formula": "=$D3>=3",
+   "kind": "expr",
+   "rule": {
+    "formula1_read": "=$D3>=3",
+    "applies_to": "D3:D10",
+    "active": "D3"
+   },
+   "rows_full": [],
+   "rows_part": [
+    4,
+    6,
+    8,
+    9
+   ],
+   "cells_hit": [
+    "D4",
+    "D6",
+    "D8",
+    "D9"
+   ],
+   "wrong_rows": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "shot": {
+    "png": "shots/trap_q25_only_d.png",
+    "size": [
+     567,
+     391
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q25_cell_value",
+   "why": "'셀 값 >= 3' 규칙(수식 아님) — 칸마다 자기 값으로 판단, 학년 · 출석 칸도 칠해짐",
+   "range": "A3:D10",
+   "first": "A3",
+   "formula": "=3",
+   "kind": "cell",
+   "rule": {
+    "formula1_read": "=3",
+    "applies_to": "A3:D10",
+    "active": "A3"
+   },
+   "rows_full": [
+    6,
+    8,
+    9
+   ],
+   "rows_part": [
+    3,
+    4,
+    5,
+    7,
+    10
+   ],
+   "cells_hit": [
+    "A10",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "B10",
+    "B6",
+    "B8",
+    "B9",
+    "C10",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "D4",
+    "D6",
+    "D8",
+    "D9"
+   ],
+   "wrong_rows": [
+    0,
+    1,
+    2,
+    4,
+    7
+   ],
+   "shot": {
+    "png": "shots/trap_q25_cell_value.png",
+    "size": [
+     567,
+     391
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q25_header_start",
+   "why": "머리글(2행)부터 골랐는데 수식은 3행 기준 — 한 행씩 밀림",
+   "range": "A2:D10",
+   "first": "A2",
+   "formula": "=$D3>=3",
+   "kind": "expr",
+   "rule": {
+    "formula1_read": "=$D3>=3",
+    "applies_to": "A2:D10",
+    "active": "A2"
+   },
+   "rows_full": [
+    3,
+    5,
+    7,
+    8
+   ],
+   "rows_part": [],
+   "cells_hit": [
+    "A3",
+    "A5",
+    "A7",
+    "A8",
+    "B3",
+    "B5",
+    "B7",
+    "B8",
+    "C3",
+    "C5",
+    "C7",
+    "C8",
+    "D3",
+    "D5",
+    "D7",
+    "D8"
+   ],
+   "wrong_rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "shot": {
+    "png": "shots/trap_q25_header_start.png",
+    "size": [
+     567,
+     391
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q26_or",
+   "why": "AND 대신 OR — 둘 중 하나만 맞아도 칠해짐",
+   "range": "A14:C21",
+   "first": "A14",
+   "formula": "=OR($B14=\"음료\",$C14<10)",
+   "kind": "expr",
+   "rule": {
+    "formula1_read": "=OR($B14=\"음료\",$C14<10)",
+    "applies_to": "A14:C21",
+    "active": "A14"
+   },
+   "rows_full": [
+    14,
+    15,
+    16,
+    17,
+    19,
+    20,
+    21
+   ],
+   "rows_part": [],
+   "cells_hit": [
+    "A14",
+    "A15",
+    "A16",
+    "A17",
+    "A19",
+    "A20",
+    "A21",
+    "B14",
+    "B15",
+    "B16",
+    "B17",
+    "B19",
+    "B20",
+    "B21",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C19",
+    "C20",
+    "C21"
+   ],
+   "wrong_rows": [
+    1,
+    2,
+    5,
+    7
+   ],
+   "shot": {
+    "png": "shots/trap_q26_or.png",
+    "size": [
+     449,
+     391
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q26_no_quote",
+   "why": "음료에 큰따옴표 없음 — 이름으로 읽혀 오류",
+   "range": "A14:C21",
+   "first": "A14",
+   "formula": "=AND($B14=음료,$C14<10)",
+   "kind": "expr",
+   "rule": {
+    "formula1_read": "=AND($B14=음료,$C14<10)",
+    "applies_to": "A14:C21",
+    "active": "A14"
+   },
+   "rows_full": [],
+   "rows_part": [],
+   "cells_hit": [],
+   "wrong_rows": [
+    0,
+    3,
+    6
+   ],
+   "shot": {
+    "png": "shots/trap_q26_no_quote.png",
+    "size": [
+     449,
+     391
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q26_relative",
+   "why": "$ 없음 — 열이 밀려 A열만 맞음",
+   "range": "A14:C21",
+   "first": "A14",
+   "formula": "=AND(B14=\"음료\",C14<10)",
+   "kind": "expr",
+   "rule": {
+    "formula1_read": "=AND(B14=\"음료\",C14<10)",
+    "applies_to": "A14:C21",
+    "active": "A14"
+   },
+   "rows_full": [],
+   "rows_part": [
+    14,
+    17,
+    20
+   ],
+   "cells_hit": [
+    "A14",
+    "A17",
+    "A20"
+   ],
+   "wrong_rows": [
+    0,
+    3,
+    6
+   ],
+   "shot": {
+    "png": "shots/trap_q26_relative.png",
+    "size": [
+     449,
+     391
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q26_le",
+   "why": "<= 10 — 재고가 딱 10 인 커피도 칠해짐",
+   "range": "A14:C21",
+   "first": "A14",
+   "formula": "=AND($B14=\"음료\",$C14<=10)",
+   "kind": "expr",
+   "rule": {
+    "formula1_read": "=AND($B14=\"음료\",$C14<=10)",
+    "applies_to": "A14:C21",
+    "active": "A14"
+   },
+   "rows_full": [
+    14,
+    17,
+    19,
+    20
+   ],
+   "rows_part": [],
+   "cells_hit": [
+    "A14",
+    "A17",
+    "A19",
+    "A20",
+    "B14",
+    "B17",
+    "B19",
+    "B20",
+    "C14",
+    "C17",
+    "C19",
+    "C20"
+   ],
+   "wrong_rows": [
+    5
+   ],
+   "shot": {
+    "png": "shots/trap_q26_le.png",
+    "size": [
+     449,
+     391
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q27_rel_avg",
+   "why": "평균 범위에 $ 없음 — 행마다 평균 범위가 아래로 밀림",
+   "range": "A25:C32",
+   "first": "A25",
+   "formula": "=$C25>=AVERAGE(C25:C32)",
+   "kind": "expr",
+   "rule": {
+    "formula1_read": "=$C25>=AVERAGE(C25:C32)",
+    "applies_to": "A25:C32",
+    "active": "A25"
+   },
+   "rows_full": [],
+   "rows_part": [
+    26,
+    28,
+    32
+   ],
+   "cells_hit": [
+    "A26",
+    "A28",
+    "A32"
+   ],
+   "wrong_rows": [
+    1,
+    3,
+    5,
+    7
+   ],
+   "shot": {
+    "png": "shots/trap_q27_rel_avg.png",
+    "size": [
+     771,
+     391
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q27_header_start",
+   "why": "머리글(24행)부터 골랐는데 수식은 25행 기준 — 한 행씩 밀림",
+   "range": "A24:C32",
+   "first": "A24",
+   "formula": "=$C25>=AVERAGE($C$25:$C$32)",
+   "kind": "expr",
+   "rule": {
+    "formula1_read": "=$C25>=AVERAGE($C$25:$C$32)",
+    "applies_to": "A24:C32",
+    "active": "A24"
+   },
+   "rows_full": [
+    25,
+    27,
+    29,
+    31
+   ],
+   "rows_part": [],
+   "cells_hit": [
+    "A25",
+    "A27",
+    "A29",
+    "A31",
+    "B25",
+    "B27",
+    "B29",
+    "B31",
+    "C25",
+    "C27",
+    "C29",
+    "C31"
+   ],
+   "wrong_rows": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "shot": {
+    "png": "shots/trap_q27_header_start.png",
+    "size": [
+     771,
+     391
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  },
+  {
+   "key": "q27_gt",
+   "why": "> 평균 — '이상'이 아니라 '초과'(이 데이터에서는 같은 줄)",
+   "range": "A25:C32",
+   "first": "A25",
+   "formula": "=$C25>AVERAGE($C$25:$C$32)",
+   "kind": "expr",
+   "rule": {
+    "formula1_read": "=$C25>AVERAGE($C$25:$C$32)",
+    "applies_to": "A25:C32",
+    "active": "A25"
+   },
+   "rows_full": [
+    26,
+    28,
+    30,
+    32
+   ],
+   "rows_part": [],
+   "cells_hit": [
+    "A26",
+    "A28",
+    "A30",
+    "A32",
+    "B26",
+    "B28",
+    "B30",
+    "B32",
+    "C26",
+    "C28",
+    "C30",
+    "C32"
+   ],
+   "wrong_rows": [],
+   "shot": {
+    "png": "shots/trap_q27_gt.png",
+    "size": [
+     771,
+     391
+    ],
+    "foreground_changed": false,
+    "fg_class": null
+   }
+  }
+ ],
+ "shots": {
+  "q25_result": {
+   "png": "shots/q25_result.png",
+   "size": [
+    567,
+    391
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q26_result": {
+   "png": "shots/q26_result.png",
+   "size": [
+    449,
+    391
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q27_result": {
+   "png": "shots/q27_result.png",
+   "size": [
+    771,
+    391
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q25_start": {
+   "png": "shots/q25_start.png",
+   "size": [
+    567,
+    391
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q26_start": {
+   "png": "shots/q26_start.png",
+   "size": [
+    449,
+    391
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  },
+  "q27_start": {
+   "png": "shots/q27_start.png",
+   "size": [
+    771,
+    391
+   ],
+   "foreground_changed": false,
+   "fg_class": null
+  }
+ },
+ "excel": {
+  "version": "16.0",
+  "build": 20625.0
+ },
+ "saved_rules": {
+  "실습.xlsx": [],
+  "정답.xlsx": [
+   {
+    "applies_to": "A3:D10",
+    "formula1": "=$D3>=3",
+    "type": 2
+   },
+   {
+    "applies_to": "A14:C21",
+    "formula1": "=AND($B14=\"음료\",$C14<10)",
+    "type": 2
+   },
+   {
+    "applies_to": "A25:C32",
+    "formula1": "=$C25>=AVERAGE($C$25:$C$32)",
+    "type": 2
+   }
+  ]
+ },
+ "fact_live": {
+  "D5": 3,
+  "rows_full": [
+   4,
+   5,
+   6,
+   8,
+   9
+  ]
+ },
+ "file_props": {
+  "실습.xlsx": {
+   "dc:creator": "CODINGNOW",
+   "cp:lastModifiedBy": "CODINGNOW"
+  },
+  "정답.xlsx": {
+   "dc:creator": "CODINGNOW",
+   "cp:lastModifiedBy": "CODINGNOW"
+  }
+ }
+}
