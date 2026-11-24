@@ -44,6 +44,7 @@
 | 중급 | 7 | [엑셀 데이터베이스 함수 DSUM · DAVERAGE · DCOUNT · DMAX · DMIN (컴활 2급 실기 계산작업 유형 연습)](02_중급/07_엑셀_데이터베이스함수_DSUM_DAVERAGE/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-07-database-functions) | 자작 3문제 · 표 · 조건 범위 모두 머리글부터(빼면 0 · #VALUE!) · 같은 줄 그리고(48.5) · 다른 줄 또는(48.1) · 조건 범위 빈 줄은 전부 맞음(60) · '문구'는 문구류까지(10) → ="=문구"(15) |
 | 중급 | 8 | [엑셀 사용자 지정 표시 형식 (컴활 2급 실기 기본작업 유형 연습)](02_중급/08_엑셀_사용자지정_표시형식/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-08-custom-number-format) | 자작 3문제 · 0"세" · #,##0"원" 은 값 그대로(평균 36.6) · '34세' 직접 입력은 글자(평균 #DIV/0!) · 요일 aaa(ddd 는 Fri) · 끝 쉼표 = 천 단위 · 양수;음수;0 — 0 구역 빠지면 0, 순서 바뀌면 양수가 빨강 · 글자는 @ · 한국어 엑셀은 [빨강]([Red] · [빨간색] 거부) |
 | 중급 | 9 | [엑셀 조건부 서식 — 수식으로 행 전체 칠하기 (컴활 2급 실기 기본작업 유형 연습)](02_중급/09_엑셀_조건부서식_수식/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-09-conditional-formatting-formula) | 자작 3문제 · =$D3>=3 네 행 통째로 · $ 빼면 A열만 · $D$3 이면 안 칠해짐 · 머리글부터 고르면 한 행 밀림 · AND(따옴표 빠지면 안 칠해짐 · OR 이면 7행) · 평균 범위는 $C$25:$C$32 |
+| 중급 | 10 | [엑셀 고급 필터 — 조건 범위 AND · OR (컴활 2급 실기 기본작업 유형 연습)](02_중급/10_엑셀_고급필터_AND_OR/) · [강의](https://www.coding-now.com/blog/excel/excel-intermediate-10-advanced-filter) | 자작 3문제 · 같은 줄 그리고 3명 · 다른 줄 또는 9명 · 빈 줄까지 잡으면 10명 전부 · 머리글 끝 공백 0명 · 필드 두 개만 꺼내기(이름 다르면 오류) · '노트'는 노트북까지 4개 · ="=노트" 1개 · =노트 는 #NAME? |
 
 중급의 '컴활 2급 실기 유형 연습' 문제는 모두 **대한상공회의소 문제가 아닌 연습용 자작 문제**입니다.
 
