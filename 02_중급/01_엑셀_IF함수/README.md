@@ -1,6 +1,6 @@
 # 중급 1강 — 엑셀 IF 함수 · AND · OR · 중첩 IF (컴활 2급 실기 계산작업 유형 연습)
 
-> ※ **대한상공회의소 문제가 아닌 연습용 자작 문제**입니다. 문제 문장 · 이름 · 점수는 모두 새로 만든 가상 자료입니다.
+> ※ **컴활 2급 실기 출제기준(대한상공회의소 공식 안내)과 시험 문제 꼴에 맞춰 만든 실전 연습 문제**입니다. 문제 문장 · 이름 · 점수는 모두 새로 만든 가상 자료입니다.
 
 - 강의: https://www.coding-now.com/blog/excel/excel-intermediate-01-if-function
 - 짝 강의: [중급 2강 — COUNTIF · SUMIF · AVERAGEIF](../02_엑셀_COUNTIF_SUMIF/)

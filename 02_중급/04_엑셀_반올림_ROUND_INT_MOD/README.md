@@ -1,6 +1,6 @@
 # 중급 4강 — 엑셀 반올림 ROUND · ROUNDUP · ROUNDDOWN · INT · MOD (컴활 2급 실기 계산작업 유형 연습)
 
-> ※ **대한상공회의소 문제가 아닌 연습용 자작 문제**입니다. 문제 문장 · 이름 · 숫자는 모두 새로 만든 가상 자료입니다(이름은 지어낸 이름).
+> ※ **컴활 2급 실기 출제기준(대한상공회의소 공식 안내)과 시험 문제 꼴에 맞춰 만든 실전 연습 문제**입니다. 문제 문장 · 이름 · 숫자는 모두 새로 만든 가상 자료입니다(이름은 지어낸 이름).
 
 - 강의: https://www.coding-now.com/blog/excel/excel-intermediate-04-round-int-mod
 - 앞 강의: [중급 1강 IF](../01_엑셀_IF함수/) · [2강 COUNTIF · SUMIF](../02_엑셀_COUNTIF_SUMIF/) · [3강 VLOOKUP · HLOOKUP](../03_엑셀_VLOOKUP_HLOOKUP/) (문제 번호는 이어서 10~12)

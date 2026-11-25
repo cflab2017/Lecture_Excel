@@ -1,5 +1,5 @@
 """엑셀 중급 5강 — 날짜 함수 DATE · YEAR · MONTH · DAY · WEEKDAY (컴활 2급 실기 계산작업 유형 연습).
-문제 · 데이터 · 문장은 모두 새로 만든 연습용 자작 문제다(대한상공회의소 문제가 아님). 이름은 지어낸 이름.
+문제 · 데이터 · 문장은 모두 컴활 2급 실기 출제기준에 맞춰 새로 만든 실전 연습 문제다. 이름은 지어낸 이름.
 
 하는 일
 1. 실습.xlsx(문제 시트 + 계산작업 시트, 답 칸 비어 있음) · 정답.xlsx(답 칸에 수식) 만들기 — 작성자 · 마지막 저장자 CODINGNOW
@@ -32,7 +32,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SHOTS = os.path.join(HERE, "shots")
 TMP = tempfile.mkdtemp(prefix="xl_mid05_")
 os.makedirs(SHOTS, exist_ok=True)
-NOTICE = "※ 대한상공회의소 문제가 아닌 연습용 자작 문제입니다. 이름 · 날짜 · 숫자는 모두 가상입니다."
+NOTICE = "※ 컴활 2급 실기 출제기준에 맞춰 새로 만든 실전 연습 문제입니다. 이름 · 날짜 · 숫자는 모두 가상입니다."
 YMD = "yyyy-mm-dd"
 GEN = "G/표준"  # 한국어 엑셀의 '일반' 형식 코드(NumberFormat = "General" 은 거부됨, 11/18 실측)
 DOW = "월화수목금토일"

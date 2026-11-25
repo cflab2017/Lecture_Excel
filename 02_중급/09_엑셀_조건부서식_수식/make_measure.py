@@ -1,5 +1,5 @@
 """엑셀 중급 9강 — 조건부 서식, 수식으로 행 전체 칠하기(컴활 2급 실기 기본작업 유형 연습).
-문제 · 데이터 · 문장은 모두 새로 만든 연습용 자작 문제다(대한상공회의소 문제가 아님). 이름 · 숫자는 지어낸 것.
+문제 · 데이터 · 문장은 모두 컴활 2급 실기 출제기준에 맞춰 새로 만든 실전 연습 문제다. 이름 · 숫자는 지어낸 것.
 
 하는 일
 1. 실습.xlsx(문제 시트 + 기본작업 시트, 조건부 서식 없음) · 정답.xlsx(답 범위에 '수식을 사용하여 서식을 지정할 셀 결정' 규칙) 만들기 — 작성자 · 마지막 저장자 CODINGNOW
@@ -33,7 +33,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SHOTS = os.path.join(HERE, "shots")
 TMP = tempfile.mkdtemp(prefix="xl_mid09_")
 os.makedirs(SHOTS, exist_ok=True)
-NOTICE = "※ 대한상공회의소 문제가 아닌 연습용 자작 문제입니다. 이름 · 숫자는 모두 가상입니다."
+NOTICE = "※ 컴활 2급 실기 출제기준에 맞춰 새로 만든 실전 연습 문제입니다. 이름 · 숫자는 모두 가상입니다."
 X_EXPR, X_CELL, X_GE = 2, 1, 7  # xlExpression · xlCellValue · xlGreaterEqual
 RED, BLUE, YELLOW = 0x0000FF, 0xFF0000, 0x00FFFF  # 엑셀 Color 는 BGR 정수 — RGB(255,0,0) · RGB(0,0,255) · RGB(255,255,0)
 WHITE, BLACK = 0xFFFFFF, 0
