@@ -1,0 +1,288 @@
+{
+ "measured": "2026-11-25 09:37",
+ "zip_sha256": "499861223e0be6de0657f4a0d848d5c1befa04b28a9362c569f638d1475d4dfe",
+ "claude_table_rows": 30,
+ "claude_vs_truth_bad": [],
+ "files": 30,
+ "mtime": {
+  "range": [
+   "2026-11-02 09:24",
+   "2026-11-16 15:56"
+  ],
+  "same_as_truth": 1,
+  "same_names": [
+   "거래처미팅_1112_최종.docx"
+  ],
+  "dated_files": 29
+ },
+ "name_dates": {
+  "월일 4자리": [
+   "0915_주간회의.docx",
+   "1013_주간회의_최종.docx",
+   "1013_주간회의_최종_수정.docx",
+   "1105 거래처미팅.pdf",
+   "거래처 미팅 메모 1015.docx",
+   "거래처미팅_1112.docx",
+   "거래처미팅_1112_최종.docx",
+   "주간보고_1008.xlsx",
+   "주간보고_1030.xlsx"
+  ],
+  "월.일": [
+   "10.27 회의록 (2).docx",
+   "10.27 회의록.docx",
+   "주간업무보고 10.16.xlsx"
+  ],
+  "○월○일": [
+   "11월6일 주간보고.xlsx",
+   "미팅메모_10월22일.docx",
+   "주간회의 10월13일.docx",
+   "주간회의 11월 3일 수정본.docx",
+   "주간회의(9월22일).docx"
+  ],
+  "연월일 8자리": [
+   "20261020 주간회의.pdf"
+  ],
+  "없음": [
+   "새 텍스트 문서.txt",
+   "주간보고 최신.xlsx",
+   "주간보고(10월 넷째주).xlsx",
+   "주간회의.docx",
+   "회의록 (1).docx",
+   "회의록_진짜최종.docx"
+  ],
+  "월-일": [
+   "주간 회의 9-29.docx"
+  ],
+  "연.월.일": [
+   "회의록 2026.9.8 - 복사본.docx",
+   "회의록 2026.9.8.docx"
+  ],
+  "연-월-일": [
+   "회의록_2026-10-06.DOCX",
+   "회의록_2026-11-10.pdf",
+   "회의록_2026-11-10_진짜최종.docx"
+  ]
+ },
+ "name_date_counts": {
+  "월일 4자리": 9,
+  "월.일": 3,
+  "○월○일": 5,
+  "연월일 8자리": 1,
+  "없음": 6,
+  "월-일": 1,
+  "연.월.일": 2,
+  "연-월-일": 3
+ },
+ "name_date_wrong_if_2026": [],
+ "sha_twins": [
+  [
+   "회의록 2026.9.8 - 복사본.docx",
+   "회의록 2026.9.8.docx"
+  ]
+ ],
+ "empty_files": [
+  "새 텍스트 문서.txt"
+ ],
+ "upper_ext": [
+  "회의록_2026-10-06.DOCX"
+ ],
+ "same_day": [
+  {
+   "date": "2026-09-08",
+   "title": "주간회의",
+   "files": [
+    {
+     "name": "회의록 2026.9.8 - 복사본.docx",
+     "edits": 0,
+     "mtime": "11-02 12:02",
+     "claude": "2026-09-08_주간회의_2.docx"
+    },
+    {
+     "name": "회의록 2026.9.8.docx",
+     "edits": 0,
+     "mtime": "11-03 16:39",
+     "claude": "2026-09-08_주간회의.docx"
+    }
+   ]
+  },
+  {
+   "date": "2026-09-15",
+   "title": "주간회의",
+   "files": [
+    {
+     "name": "0915_주간회의.docx",
+     "edits": 0,
+     "mtime": "11-04 15:49",
+     "claude": "2026-09-15_주간회의.docx"
+    },
+    {
+     "name": "회의록 (1).docx",
+     "edits": 1,
+     "mtime": "11-13 08:40",
+     "claude": "2026-09-15_주간회의_2.docx"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-13",
+   "title": "주간회의",
+   "files": [
+    {
+     "name": "1013_주간회의_최종.docx",
+     "edits": 0,
+     "mtime": "11-11 08:20",
+     "claude": "2026-10-13_주간회의.docx"
+    },
+    {
+     "name": "1013_주간회의_최종_수정.docx",
+     "edits": 1,
+     "mtime": "11-08 12:11",
+     "claude": "2026-10-13_주간회의_2.docx"
+    },
+    {
+     "name": "주간회의 10월13일.docx",
+     "edits": 2,
+     "mtime": "11-05 16:47",
+     "claude": "2026-10-13_주간회의_3.docx"
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "title": "주간회의",
+   "files": [
+    {
+     "name": "10.27 회의록 (2).docx",
+     "edits": 1,
+     "mtime": "11-02 17:20",
+     "claude": "2026-10-27_주간회의_2.docx"
+    },
+    {
+     "name": "10.27 회의록.docx",
+     "edits": 0,
+     "mtime": "11-10 11:12",
+     "claude": "2026-10-27_주간회의.docx"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "title": "주간회의",
+   "files": [
+    {
+     "name": "주간회의 11월 3일 수정본.docx",
+     "edits": 0,
+     "mtime": "11-02 17:07",
+     "claude": "2026-11-03_주간회의.docx"
+    },
+    {
+     "name": "회의록_진짜최종.docx",
+     "edits": 1,
+     "mtime": "11-08 14:49",
+     "claude": "2026-11-03_주간회의_2.docx"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "title": "주간회의",
+   "files": [
+    {
+     "name": "회의록_2026-11-10.pdf",
+     "edits": null,
+     "mtime": "11-15 12:59",
+     "claude": "2026-11-10_주간회의.pdf"
+    },
+    {
+     "name": "회의록_2026-11-10_진짜최종.docx",
+     "edits": 0,
+     "mtime": "11-02 17:01",
+     "claude": "2026-11-10_주간회의.docx"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "title": "거래처미팅",
+   "files": [
+    {
+     "name": "거래처미팅_1112.docx",
+     "edits": 0,
+     "mtime": "11-13 09:38",
+     "claude": "2026-11-12_거래처미팅.docx"
+    },
+    {
+     "name": "거래처미팅_1112_최종.docx",
+     "edits": 1,
+     "mtime": "11-12 14:34",
+     "claude": "2026-11-12_거래처미팅_2.docx"
+    }
+   ]
+  }
+ ],
+ "powershell": "5.1.26100.9818",
+ "export_csv": {
+  "exit": 0,
+  "bom": true,
+  "lines": 31,
+  "stderr": ""
+ },
+ "excel": "16.0 build 20625.0",
+ "excel_open": {
+  "rows": 31,
+  "header": "Name",
+  "names_match": true,
+  "mismatch": []
+ },
+ "saved_csv": {
+  "목록_utf8.csv": {
+   "bom": true,
+   "bytes": 1749,
+   "utf8_ok": true
+  },
+  "목록_ansi.csv": {
+   "bom": false,
+   "bytes": 1466,
+   "utf8_ok": false
+  }
+ },
+ "hand_runs": {
+  "utf8": {
+   "hash_compare_lines": 0,
+   "hash_file_lines": 30,
+   "undo": {
+    "errors": 0,
+    "names_back": true,
+    "content_same": true
+   },
+   "whatif_lines": 29,
+   "whatif_first": [
+    "What if: Performing the operation \"Rename File\" on target \"Item: C:\\Users\\user\\AppData\\Local\\Temp\\cn_auto2_measure\\run_utf8\\files\\0915_주간회의.docx Destination: C:\\Users\\user\\AppData\\Local\\Temp\\cn_auto2_measure\\run_utf8\\files\\2026-09-15_주간회의.docx\".",
+    "What if: Performing the operation \"Rename File\" on target \"Item: C:\\Users\\user\\AppData\\Local\\Temp\\cn_auto2_measure\\run_utf8\\files\\10.27 회의록 (2).docx Destination: C:\\Users\\user\\AppData\\Local\\Temp\\cn_auto2_measure\\run_utf8\\files\\2026-10-27_주간회의_2.docx\"."
+   ],
+   "errors": 0,
+   "error_first": [],
+   "renamed": 29,
+   "files_after": 30,
+   "content_same": true,
+   "names_equal_claude_table": true
+  },
+  "ansi": {
+   "hash_compare_lines": 0,
+   "hash_file_lines": 30,
+   "undo": {},
+   "whatif_lines": 0,
+   "whatif_first": [],
+   "errors": 29,
+   "error_first": [
+    "Rename-Item : Cannot rename because item at 'files\\0915_�ְ�ȸ��.docx' does not exist.",
+    "At line:1 char:157",
+    "+ ... ch-Object { Rename-Item -LiteralPath (Join-Path files $_.Name) -NewNa ..."
+   ],
+   "renamed": 0,
+   "files_after": 30,
+   "content_same": true,
+   "names_equal_claude_table": false
+  }
+ }
+}
