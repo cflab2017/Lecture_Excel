@@ -1,5 +1,5 @@
 """엑셀 중급 12강 — 피벗 테이블(컴활 2급 실기 분석작업 유형 연습).
-문제 · 데이터 · 문장은 모두 새로 만든 연습용 자작 문제다(대한상공회의소 문제가 아님). 이름 · 숫자는 지어낸 것.
+문제 · 데이터 · 문장은 모두 컴활 2급 실기 출제기준에 맞춰 새로 만든 실전 연습 문제다. 이름 · 숫자는 지어낸 것.
 
 하는 일
 1. 실습.xlsx(문제 시트 + 분석작업-34 · 35 · 36 시트, 표만 있음) · 정답.xlsx(같은 시트 A15 에 피벗 테이블까지) 만들기 — 작성자 · 마지막 저장자 CODINGNOW
@@ -34,7 +34,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SHOTS = os.path.join(HERE, "shots")
 TMP = tempfile.mkdtemp(prefix="xl_mid12_")
 os.makedirs(SHOTS, exist_ok=True)
-NOTICE = "※ 대한상공회의소 문제가 아닌 연습용 자작 문제입니다. 이름 · 숫자는 모두 가상입니다."
+NOTICE = "※ 컴활 2급 실기 출제기준에 맞춰 새로 만든 실전 연습 문제입니다. 이름 · 숫자는 모두 가상입니다."
 FN = {"합계": -4157, "평균": -4106, "개수": -4112, "최대값": -4136}
 FN_NAME = {v: k for k, v in FN.items()}
 ROW, COL, DATA = 1, 2, 4  # xlRowField · xlColumnField · xlDataField
