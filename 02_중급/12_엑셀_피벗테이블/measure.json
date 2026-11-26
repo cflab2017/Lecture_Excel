@@ -1,6 +1,6 @@
 {
  "run": "2026-11-25T12:18:16",
- "notice": "※ 대한상공회의소 문제가 아닌 연습용 자작 문제입니다. 이름 · 숫자는 모두 가상입니다.",
+ "notice": "※ 컴활 2급 실기 출제기준에 맞춰 새로 만든 실전 연습 문제입니다. 이름 · 숫자는 모두 가상입니다.",
  "pivot_version": 5,
  "dest": "A15",
  "how": "코드로 만듦(PivotCaches.Create · CreatePivotTable · Orientation · AddDataField) — 화면에서 끌어 넣기 아님",
